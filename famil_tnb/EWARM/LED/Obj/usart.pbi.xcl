@@ -1,4 +1,4 @@
-"D:\project_file\100_demo\famil_tnb\famil_tnb\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim.c"
+"D:\project_file\100_demo\famil_tnb\famil_tnb\Src\usart.c"
 -std=c11
 -ferror-limit=0
 -I

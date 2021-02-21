@@ -23,7 +23,7 @@
 #include "gpio.h"
 #include "FreeRTOS.h"
 #include "task.h"
-
+#include "usart.h"
 
 #define TEST0_TASK_PRIO		3
 #define TEST0_STK_SIZE 		128 
@@ -36,12 +36,62 @@ void Task0_Task(void *pvParameters);
 void Task1_Task(void *pvParameters);
 void SystemClock_Config(void);
 
+uint8_t hello[] = "USART1 is ready...\n";
+uint8_t recv_buf[20] = {0};
+uint8_t recv_buf1[20] = {0};
+/* USER CODE BEGIN 4 */
+/* 中断回调函数 */
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
+{
+    /* 判断是哪个串口触发的中断 */
+    if(huart ->Instance == USART1)
+    {
+        //将接收到的数据发送
+        HAL_UART_Transmit_IT(huart, (uint8_t*)recv_buf, 20);
+        //重新使能串口接收中断
+        HAL_UART_Receive_IT(huart, (uint8_t*)recv_buf, 20);
+    }
+    if(huart ->Instance == USART2)
+    {
+        //将接收到的数据发送
+        HAL_UART_Transmit_IT(huart, (uint8_t*)recv_buf1, 20);
+        //重新使能串口接收中断
+        HAL_UART_Receive_IT(huart, (uint8_t*)recv_buf1, 20);
+    }  
+    /* 判断是哪个串口触发的中断 */
+    if(huart ->Instance == USART3)
+    {
+        //将接收到的数据发送
+        HAL_UART_Transmit_IT(huart, (uint8_t*)recv_buf, 20);
+        //重新使能串口接收中断
+        HAL_UART_Receive_IT(huart, (uint8_t*)recv_buf, 20);
+    }
+    if(huart ->Instance == UART4)
+    {
+        //将接收到的数据发送
+        HAL_UART_Transmit_IT(huart, (uint8_t*)recv_buf, 20);
+        //重新使能串口接收中断
+        HAL_UART_Receive_IT(huart, (uint8_t*)recv_buf, 20);
+    }   
+}
+
 int main(void)
 {
   HAL_Init();
   SystemClock_Config();
   MX_GPIO_Init();
-
+  
+  MX_USART1_UART_Init();
+  MX_USART2_UART_Init();
+  MX_USART3_UART_Init();
+  MX_UART4_Init();
+  
+  //使能串口中断接收
+  HAL_UART_Receive_IT(&huart1, (uint8_t*)recv_buf, 20);
+  HAL_UART_Receive_IT(&huart2, (uint8_t*)recv_buf1, 20);
+  HAL_UART_Receive_IT(&huart3, (uint8_t*)recv_buf, 20);
+  HAL_UART_Receive_IT(&huart4, (uint8_t*)recv_buf, 20);
+  
   xTaskCreate(Task0_Task,      "Task0_Task",        TEST0_STK_SIZE,NULL, 	TEST0_TASK_PRIO, 	NULL);    
   xTaskCreate(Task1_Task,      "Task1_Task",        TEST1_STK_SIZE,NULL, 	TEST1_TASK_PRIO, 	NULL);         
   vTaskStartScheduler();      
@@ -56,9 +106,10 @@ void Task0_Task(void *pvParameters)
   while(1)
   {
       HAL_GPIO_WritePin(GPIOA,GPIO_PIN_6,GPIO_PIN_RESET); 	 	
-      vTaskDelay( 50 / portTICK_PERIOD_MS);	
+      vTaskDelay( 500 / portTICK_PERIOD_MS);	
       HAL_GPIO_WritePin(GPIOA,GPIO_PIN_6,GPIO_PIN_SET);   	
-      vTaskDelay( 50 / portTICK_PERIOD_MS);
+      vTaskDelay( 500 / portTICK_PERIOD_MS);
+      printf("smoke_value = %d\n", 1);
   }
 }
 
