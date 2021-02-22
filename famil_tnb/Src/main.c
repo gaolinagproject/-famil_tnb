@@ -115,18 +115,27 @@ void Task0_Task(void *pvParameters)
 
 void Task1_Task(void *pvParameters)
 {
+  uint8_t temp = 0,humi = 0;
   while(1)
   {
 
-      if(0 == HAL_GPIO_ReadPin(KEY1_GPIO_Port, KEY1_Pin))
-      {
-        HAL_GPIO_WritePin(GPIOA,GPIO_PIN_7,GPIO_PIN_RESET); 	
-      }
-      if(0 == HAL_GPIO_ReadPin(KEY0_GPIO_Port, KEY0_Pin))
-      {
-        HAL_GPIO_WritePin(GPIOA,GPIO_PIN_7,GPIO_PIN_SET);   
-      }
-      vTaskDelay( 200 / portTICK_PERIOD_MS);
+//      if(0 == HAL_GPIO_ReadPin(KEY1_GPIO_Port, KEY1_Pin))
+//      {
+//        HAL_GPIO_WritePin(GPIOA,GPIO_PIN_7,GPIO_PIN_RESET); 	
+//      }
+//      if(0 == HAL_GPIO_ReadPin(KEY0_GPIO_Port, KEY0_Pin))
+//      {
+//        HAL_GPIO_WritePin(GPIOA,GPIO_PIN_7,GPIO_PIN_SET);   
+//      }
+    if(DHT11_Read_Data(&temp,&humi) == 0)
+    {
+      printf("temp = %d\n humi = %d\n",temp,humi);
+    }
+    else
+    {
+      printf("jjjj \n");
+    }
+      vTaskDelay( 1000 / portTICK_PERIOD_MS);
   }
 }
 /**
