@@ -37,6 +37,7 @@ extern "C" {
 #include "i2c.h"
 #include "adc.h"
 #include "spi.h"
+#include "tim.h"
   
 #include "delay.h"
 #include "dht11.h"

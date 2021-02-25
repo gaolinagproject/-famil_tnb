@@ -84,6 +84,7 @@ int main(void)
   MX_UART4_Init();
   MX_ADC1_Init();
   MX_SPI1_Init();
+  MX_TIM14_Init();
   
   DS3231_Init();
   Set_DS3231_Time(2021,2,25,10,10,10,4);
@@ -122,9 +123,18 @@ void Task1_Task(void *pvParameters)
 {
   uint8_t temp = 0,humi = 0;
   uint16_t smoke_value = 0;
-
+  uint16_t pluse = 500;
   while(1)
   {
+    HAL_TIM_PWM_Start(&htim14,TIM_CHANNEL_1);
+    
+//    pluse += 5;
+//    if(pluse == 1000)
+//    {
+//      pluse = 900;
+//    }
+     pluse = 50;
+    __HAL_TIM_SetCompare(&htim14, TIM_CHANNEL_1, (uint16_t)pluse);
     
 //    mp3_test();
 
