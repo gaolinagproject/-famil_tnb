@@ -1057,6 +1057,9 @@
                 <name>$PROJ_DIR$\..\Src\main.c</name>
             </file>
             <file>
+                <name>$PROJ_DIR$\..\Src\mylib.c</name>
+            </file>
+            <file>
                 <name>$PROJ_DIR$\..\Src\spi.c</name>
             </file>
             <file>

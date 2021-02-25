@@ -122,8 +122,11 @@ void Task1_Task(void *pvParameters)
 {
   uint8_t temp = 0,humi = 0;
   uint16_t smoke_value = 0;
+
   while(1)
   {
+    
+//    mp3_test();
 
 //      if(0 == HAL_GPIO_ReadPin(KEY1_GPIO_Port, KEY1_Pin))
 //      {
@@ -134,7 +137,7 @@ void Task1_Task(void *pvParameters)
 //        HAL_GPIO_WritePin(GPIOA,GPIO_PIN_7,GPIO_PIN_SET);   
 //      }
     
-   gp2y_data();
+   //gp2y_data();
     /*
     Get_DS3231_Time(); 
     printf("syear %d - smon %d  - sday %d - hour %d - min %d - sec %d -s week %d \n",

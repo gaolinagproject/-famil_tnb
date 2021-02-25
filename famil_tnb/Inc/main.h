@@ -43,6 +43,7 @@ extern "C" {
 #include "ds3231.h"
 #include "gp2y.h"
 #include "w25qxx.h" 
+#include "mylib.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
