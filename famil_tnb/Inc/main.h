@@ -35,11 +35,14 @@ extern "C" {
 #include <stdio.h>
 #include "gpio.h"
 #include "i2c.h"
+#include "adc.h"
+#include "spi.h"
   
 #include "delay.h"
 #include "dht11.h"
 #include "ds3231.h"
-
+#include "gp2y.h"
+#include "w25qxx.h" 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 

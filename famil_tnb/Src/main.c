@@ -25,8 +25,8 @@
 #define TEST0_TASK_PRIO		3
 #define TEST0_STK_SIZE 		128 
 
-#define TEST1_TASK_PRIO		2
-#define TEST1_STK_SIZE 		128 
+#define TEST1_TASK_PRIO		4
+#define TEST1_STK_SIZE 		256 
 
 
 void Task0_Task(void *pvParameters);
@@ -82,6 +82,8 @@ int main(void)
   MX_USART2_UART_Init();
   MX_USART3_UART_Init();
   MX_UART4_Init();
+  MX_ADC1_Init();
+  MX_SPI1_Init();
   
   DS3231_Init();
   Set_DS3231_Time(2021,2,25,10,10,10,4);
@@ -91,6 +93,10 @@ int main(void)
   HAL_UART_Receive_IT(&huart2, (uint8_t*)recv_buf1, 20);
   HAL_UART_Receive_IT(&huart3, (uint8_t*)recv_buf, 20);
   HAL_UART_Receive_IT(&huart4, (uint8_t*)recv_buf, 20);
+  
+   ReadData( );
+  WriteData( );
+  
   
   xTaskCreate(Task0_Task,      "Task0_Task",        TEST0_STK_SIZE,NULL, 	TEST0_TASK_PRIO, 	NULL);    
   xTaskCreate(Task1_Task,      "Task1_Task",        TEST1_STK_SIZE,NULL, 	TEST1_TASK_PRIO, 	NULL);         
@@ -105,17 +111,17 @@ void Task0_Task(void *pvParameters)
 {
   while(1)
   {
-      HAL_GPIO_WritePin(GPIOA,GPIO_PIN_6,GPIO_PIN_RESET); 	 	
+      HAL_GPIO_WritePin(GPIOA,GPIO_PIN_7,GPIO_PIN_RESET); 	 	
       vTaskDelay( 500 / portTICK_PERIOD_MS);	
-      HAL_GPIO_WritePin(GPIOA,GPIO_PIN_6,GPIO_PIN_SET);   	
+      HAL_GPIO_WritePin(GPIOA,GPIO_PIN_7,GPIO_PIN_SET);   	
       vTaskDelay( 500 / portTICK_PERIOD_MS);
-      printf("smoke_value = %d\n", 1);
   }
 }
 
 void Task1_Task(void *pvParameters)
 {
   uint8_t temp = 0,humi = 0;
+  uint16_t smoke_value = 0;
   while(1)
   {
 
@@ -128,6 +134,8 @@ void Task1_Task(void *pvParameters)
 //        HAL_GPIO_WritePin(GPIOA,GPIO_PIN_7,GPIO_PIN_SET);   
 //      }
     
+   gp2y_data();
+    /*
     Get_DS3231_Time(); 
     printf("syear %d - smon %d  - sday %d - hour %d - min %d - sec %d -s week %d \n",
            calendar.w_year,calendar.w_month,calendar.w_date,calendar.hour,calendar.min,calendar.sec,calendar.week);
@@ -139,7 +147,7 @@ void Task1_Task(void *pvParameters)
     else
     {
       printf("jjjj \n");
-    }
+    }*/
       vTaskDelay( 1000 / portTICK_PERIOD_MS);
   }
 }
