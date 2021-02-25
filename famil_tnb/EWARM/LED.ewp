@@ -1039,7 +1039,13 @@
                 <name>$PROJ_DIR$\..\Src\dht11.c</name>
             </file>
             <file>
+                <name>$PROJ_DIR$\..\Src\ds3231.c</name>
+            </file>
+            <file>
                 <name>$PROJ_DIR$\..\Src\gpio.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\Src\i2c.c</name>
             </file>
             <file>
                 <name>$PROJ_DIR$\..\Src\main.c</name>
@@ -1091,6 +1097,12 @@
             </file>
             <file>
                 <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_i2c.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_i2c_ex.c</name>
             </file>
             <file>
                 <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c</name>

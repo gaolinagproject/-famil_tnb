@@ -29,10 +29,17 @@ extern "C" {
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f4xx_hal.h"
+#include "FreeRTOS.h"
+#include "task.h"
+#include "usart.h"
 #include <stdio.h>
+#include "gpio.h"
+#include "i2c.h"
+  
 #include "delay.h"
 #include "dht11.h"
-#include "gpio.h"
+#include "ds3231.h"
+
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 

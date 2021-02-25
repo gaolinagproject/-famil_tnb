@@ -20,10 +20,7 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-#include "gpio.h"
-#include "FreeRTOS.h"
-#include "task.h"
-#include "usart.h"
+
 
 #define TEST0_TASK_PRIO		3
 #define TEST0_STK_SIZE 		128 
@@ -80,11 +77,14 @@ int main(void)
   HAL_Init();
   SystemClock_Config();
   MX_GPIO_Init();
-  
+  MX_I2C1_Init();
   MX_USART1_UART_Init();
   MX_USART2_UART_Init();
   MX_USART3_UART_Init();
   MX_UART4_Init();
+  
+  DS3231_Init();
+  Set_DS3231_Time(2021,2,25,10,10,10,4);
   
   //使能串口中断接收
   HAL_UART_Receive_IT(&huart1, (uint8_t*)recv_buf, 20);
@@ -127,6 +127,11 @@ void Task1_Task(void *pvParameters)
 //      {
 //        HAL_GPIO_WritePin(GPIOA,GPIO_PIN_7,GPIO_PIN_SET);   
 //      }
+    
+    Get_DS3231_Time(); 
+    printf("syear %d - smon %d  - sday %d - hour %d - min %d - sec %d -s week %d \n",
+           calendar.w_year,calendar.w_month,calendar.w_date,calendar.hour,calendar.min,calendar.sec,calendar.week);
+    
     if(DHT11_Read_Data(&temp,&humi) == 0)
     {
       printf("temp = %d\n humi = %d\n",temp,humi);
