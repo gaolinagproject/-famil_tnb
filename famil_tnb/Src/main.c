@@ -124,17 +124,23 @@ void Task1_Task(void *pvParameters)
   uint8_t temp = 0,humi = 0;
   uint16_t smoke_value = 0;
   uint16_t pluse = 500;
+  
+  if (-1 == sgp30_init()) {
+          printf("sgp30 init fail\r\n");
+  }
+  printf("sgp30 init success\r\n");
+  DHT11_Init();
   while(1)
   {
-    HAL_TIM_PWM_Start(&htim14,TIM_CHANNEL_1);
+   // HAL_TIM_PWM_Start(&htim14,TIM_CHANNEL_1);
     
 //    pluse += 5;
 //    if(pluse == 1000)
 //    {
 //      pluse = 900;
 //    }
-     pluse = 50;
-    __HAL_TIM_SetCompare(&htim14, TIM_CHANNEL_1, (uint16_t)pluse);
+//     pluse = 50;
+//    __HAL_TIM_SetCompare(&htim14, TIM_CHANNEL_1, (uint16_t)pluse);
     
 //    mp3_test();
 
@@ -148,7 +154,16 @@ void Task1_Task(void *pvParameters)
 //      }
     
    //gp2y_data();
-    /*
+    
+    
+   if( -1 == spg30_read()) {
+             printf("sgp30 read fail\r\n");
+         }
+         else {
+             printf("sgp30 read success, co2:%4d ppm, tvoc:%4d ppd\r\n", sgp30_data.co2, sgp30_data.tvoc);
+         }
+    
+    
     Get_DS3231_Time(); 
     printf("syear %d - smon %d  - sday %d - hour %d - min %d - sec %d -s week %d \n",
            calendar.w_year,calendar.w_month,calendar.w_date,calendar.hour,calendar.min,calendar.sec,calendar.week);
@@ -160,7 +175,7 @@ void Task1_Task(void *pvParameters)
     else
     {
       printf("jjjj \n");
-    }*/
+    }
       vTaskDelay( 1000 / portTICK_PERIOD_MS);
   }
 }
