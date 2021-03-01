@@ -31,20 +31,6 @@ extern "C" {
 #include "stm32f4xx_hal.h"
 #include "FreeRTOS.h"
 #include "task.h"
-#include "usart.h"
-#include <stdio.h>
-#include "gpio.h"
-#include "i2c.h"
-#include "adc.h"
-#include "spi.h"
-#include "tim.h"
-  
-#include "delay.h"
-#include "dht11.h"
-#include "ds3231.h"
-#include "gp2y.h"
-#include "w25qxx.h" 
-#include "mylib.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
@@ -73,10 +59,6 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define KEY1_Pin GPIO_PIN_3
-#define KEY1_GPIO_Port GPIOE
-#define KEY0_Pin GPIO_PIN_4
-#define KEY0_GPIO_Port GPIOE
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */

@@ -36,8 +36,7 @@
 /* USER CODE END Private defines */
 
 void MX_GPIO_Init(void);
-void DHT11_IO_OUT(void);
-void DHT11_IO_IN(void);
+
 /* USER CODE BEGIN Prototypes */
 
 /* USER CODE END Prototypes */
