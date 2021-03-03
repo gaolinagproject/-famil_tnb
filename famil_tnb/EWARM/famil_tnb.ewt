@@ -1168,13 +1168,40 @@
         <group>
             <name>User</name>
             <file>
+                <name>$PROJ_DIR$\..\Src\crc.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\Src\delay.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\Src\dht11.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\Src\ds3231.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\Src\FramewinDLG.c</name>
+            </file>
+            <file>
                 <name>$PROJ_DIR$\..\Src\fsmc.c</name>
             </file>
             <file>
                 <name>$PROJ_DIR$\..\Src\gpio.c</name>
             </file>
             <file>
+                <name>$PROJ_DIR$\..\Src\i2c.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\Src\ILI93xx.c</name>
+            </file>
+            <file>
                 <name>$PROJ_DIR$\..\Src\main.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\Src\mylib.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\Src\spi.c</name>
             </file>
             <file>
                 <name>$PROJ_DIR$\..\Src\stm32f4xx_hal_msp.c</name>
@@ -1183,7 +1210,13 @@
                 <name>$PROJ_DIR$\..\Src\stm32f4xx_it.c</name>
             </file>
             <file>
+                <name>$PROJ_DIR$\..\Src\touch.c</name>
+            </file>
+            <file>
                 <name>$PROJ_DIR$\..\Src\usart.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\Src\w25qxx.c</name>
             </file>
         </group>
     </group>
@@ -1202,6 +1235,9 @@
             </file>
             <file>
                 <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_crc.c</name>
             </file>
             <file>
                 <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.c</name>
@@ -1225,6 +1261,12 @@
                 <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c</name>
             </file>
             <file>
+                <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_i2c.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_i2c_ex.c</name>
+            </file>
+            <file>
                 <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c</name>
             </file>
             <file>
@@ -1235,6 +1277,9 @@
             </file>
             <file>
                 <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_spi.c</name>
             </file>
             <file>
                 <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_sram.c</name>
@@ -1251,7 +1296,28 @@
             <file>
                 <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_fsmc.c</name>
             </file>
+            <file>
+                <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_gpio.c</name>
+            </file>
         </group>
+    </group>
+    <group>
+        <name>EMWIN</name>
+        <file>
+            <name>$PROJ_DIR$\..\STemWin\OS\GUI_X_OS.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\STemWin\Config\GUI_X_Touch_Analog.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\STemWin\Config\GUIConf.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\STemWin\Config\LCDConf_FlexColor_Template.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\STemWin\Lib\STemWin_CM4_OS_wc16.a</name>
+        </file>
     </group>
     <group>
         <name>FreeRTOS</name>

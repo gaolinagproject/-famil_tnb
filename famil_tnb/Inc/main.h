@@ -29,8 +29,30 @@ extern "C" {
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f4xx_hal.h"
+#include "stm32f4xx.h"
+#include "stm32f4xx_ll_bus.h"
 #include "FreeRTOS.h"
 #include "task.h"
+#include <stdio.h>
+#include "stdlib.h"
+
+#include "GUI.h"
+  
+#include "spi.h"  
+#include "i2c.h"  
+#include "crc.h"
+#include "usart.h"
+#include "gpio.h"
+#include "fsmc.h"
+#include "ILI93xx.h"
+  
+  
+#include "delay.h"
+#include "touch.h"   
+#include "mylib.h" 
+#include "w25qxx.h" 
+#include "dht11.h" 
+#include "ds3231.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
