@@ -9,12 +9,12 @@ typedef struct
     uint8_t    hour;
     uint8_t    min;
     uint8_t    sec;            
-    uint32_t w_year;
     uint8_t  w_month;
     uint8_t  w_date;
     uint8_t  week;        
     uint8_t    temper_H;
     uint8_t    temper_L;
+    uint32_t w_year;
 }Calendar_OBJ;
 extern Calendar_OBJ calendar;    //日历结构体
 extern uint8_t const mon_table[12];    //月份日期数据表

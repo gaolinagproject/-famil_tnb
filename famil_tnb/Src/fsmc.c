@@ -30,7 +30,6 @@ SRAM_HandleTypeDef hsram1;
 void MX_FSMC_Init(void)
 {
   FSMC_NORSRAM_TimingTypeDef Timing = {0};
-
   /** Perform the SRAM1 memory initialization sequence
   */
   hsram1.Instance = FSMC_NORSRAM_DEVICE;
@@ -51,7 +50,7 @@ void MX_FSMC_Init(void)
   hsram1.Init.WriteBurst = FSMC_WRITE_BURST_DISABLE;
   hsram1.Init.PageSize = FSMC_PAGE_SIZE_NONE;
   /* Timing */
-
+  
   Timing.AddressSetupTime = 2;
   Timing.AddressHoldTime = 2;
   Timing.DataSetupTime = 6;
@@ -59,6 +58,8 @@ void MX_FSMC_Init(void)
   Timing.CLKDivision = 16;
   Timing.DataLatency = 17;
   Timing.AccessMode = FSMC_ACCESS_MODE_A;
+  
+
   /* ExtTiming */
 
   if (HAL_SRAM_Init(&hsram1, &Timing, NULL) != HAL_OK)

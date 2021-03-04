@@ -352,6 +352,7 @@
                     <state>$PROJ_DIR$\..\STemWin\inc</state>
                     <state>$PROJ_DIR$\..\STemWin\Lib</state>
                     <state>$PROJ_DIR$\..\STemWin\OS</state>
+                    <state>$PROJ_DIR$\..\UserInterface</state>
                 </option>
                 <option>
                     <name>CCStdIncCheck</name>
@@ -1079,6 +1080,18 @@
                 <name>$PROJ_DIR$\..\Src\stm32f4xx_it.c</name>
             </file>
             <file>
+                <name>$PROJ_DIR$\..\Src\task_core.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\Src\task_lcd.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\Src\task_led.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\Src\task_touch.c</name>
+            </file>
+            <file>
                 <name>$PROJ_DIR$\..\Src\touch.c</name>
             </file>
             <file>
@@ -1086,6 +1099,30 @@
             </file>
             <file>
                 <name>$PROJ_DIR$\..\Src\w25qxx.c</name>
+            </file>
+        </group>
+        <group>
+            <name>UserInterface</name>
+            <group>
+                <name>font</name>
+                <file>
+                    <name>$PROJ_DIR$\..\UserInterface\font\b_image.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\UserInterface\font\font_micro_25.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\UserInterface\font\font_micro_32.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\UserInterface\font\font_micro_64.c</name>
+                </file>
+            </group>
+            <file>
+                <name>$PROJ_DIR$\..\UserInterface\gui_common.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\UserInterface\ui_main.c</name>
             </file>
         </group>
     </group>

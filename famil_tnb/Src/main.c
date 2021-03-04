@@ -27,56 +27,34 @@
 #define TEST0_TASK_PRIO		3
 #define TEST0_STK_SIZE 		128 
 
-#define TEST1_TASK_PRIO		2
-#define TEST1_STK_SIZE 		500 
+#define LCD_TASK_PRIO		2
+#define LCD_STK_SIZE 		2048 
 
-#define TEST2_TASK_PRIO		3
-#define TEST2_STK_SIZE 		128 
-/* USER CODE END PV */
+#define CORE_TASK_PRIO		3
+#define CORE_STK_SIZE 		256 
+
+    
+QueueHandle_t ParaSensorQue;  
+    
+    
 void Task0_Task(void *pvParameters);
-void Task1_Task(void *pvParameters);
-void Task2_Task(void *pvParameters);
-/* Private function prototypes -----------------------------------------------*/
+
 void SystemClock_Config(void);
-/* USER CODE BEGIN PFP */
 
-/* USER CODE END PFP */
-
-/* Private user code ---------------------------------------------------------*/
-/* USER CODE BEGIN 0 */
 uint8_t hello[] = "USART1 is ready...\n";
 uint8_t recv_buf[20] = {0};
 uint8_t recv_buf1[20] = {0};
-/* USER CODE END 0 */
 
-/**
-  * @brief  The application entry point.
-  * @retval int
-  */
 int main(void)
 {
-  /* USER CODE BEGIN 1 */
 
-  /* USER CODE END 1 */
-  
 
-  /* MCU Configuration--------------------------------------------------------*/
-
-  /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
   HAL_Init();
 
-  /* USER CODE BEGIN Init */
 
-  /* USER CODE END Init */
-
-  /* Configure the system clock */
   SystemClock_Config();
 
-  /* USER CODE BEGIN SysInit */
 
-  /* USER CODE END SysInit */
-
-  /* Initialize all configured peripherals */
   MX_CRC_Init();
   MX_GPIO_Init();
   MX_FSMC_Init();
@@ -87,16 +65,16 @@ int main(void)
   MX_USART2_UART_Init();
   MX_USART3_UART_Init();
   
-  
-  
   //使能串口中断接收
   HAL_UART_Receive_IT(&huart1, (uint8_t*)recv_buf, 20);
   HAL_UART_Receive_IT(&huart2, (uint8_t*)recv_buf1, 20);
   
+  
+  ParaSensorQue   =  xQueueCreate(5, sizeof(sensor_data_t));
   /* USER CODE BEGIN 2 */
   xTaskCreate(Task0_Task,      "Task0_Task",        TEST0_STK_SIZE,NULL, 	TEST0_TASK_PRIO, 	NULL);    
-  xTaskCreate(Task1_Task,      "Task1_Task",        TEST1_STK_SIZE,NULL, 	TEST1_TASK_PRIO, 	NULL);      
-  xTaskCreate(Task2_Task,      "Task2_Task",        TEST2_STK_SIZE,NULL, 	TEST2_TASK_PRIO, 	NULL);  
+  xTaskCreate(Task_Lcd,        "Task_Lcd",        LCD_STK_SIZE,NULL, 	LCD_TASK_PRIO, 	NULL);      
+  xTaskCreate(Task_Core,       "Task_Core",        CORE_STK_SIZE,NULL, 	CORE_TASK_PRIO, 	NULL);  
   vTaskStartScheduler(); 
 
   while (1)
@@ -131,46 +109,8 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 
 
 
-void Task2_Task(void *pvParameters)
-{
-  uint8_t temp = 0,humi = 0;
-  
-  DS3231_Init();
-  Set_DS3231_Time(2021,2,25,10,10,10,4);
-  
-  if (-1 == sgp30_init()) {
-          printf("sgp30 init fail\r\n");
-  }
-  printf("sgp30 init success\r\n");
-  
-  DHT11_Init();
-  while(1)
-  {
-//    mp3_test();
-    Get_DS3231_Time(); 
-    printf("syear %d - smon %d  - sday %d - hour %d - min %d - sec %d -s week %d \n",
-           calendar.w_year,calendar.w_month,calendar.w_date,calendar.hour,calendar.min,calendar.sec,calendar.week);
-    
-    if( -1 == spg30_read()) {
-      printf("sgp30 read fail\r\n");
-    }
-    else {
-      printf("sgp30 read success, co2:%4d ppm, tvoc:%4d ppd\r\n", sgp30_data.co2, sgp30_data.tvoc);
-    }
 
-    
-    
-    if(DHT11_Read_Data(&temp,&humi) == 0)
-    {
-      printf("temp = %d\n humi = %d\n",temp,humi);
-    }
-    else
-    {
-      printf("jjjj \n");
-    }
-      vTaskDelay( 1000 / portTICK_PERIOD_MS);
-  }
-}
+
 
 
 void Task0_Task(void *pvParameters)
@@ -183,23 +123,8 @@ void Task0_Task(void *pvParameters)
   }
 }
 #include "DIALOG.h"
-extern WM_HWIN CreateFramewin(void);
-void Task1_Task(void *pvParameters)
-{
-  ILI93XX_LCD_Init();
-  LCD_Clear(BLACK);
-  TP_Init();
 
-  GUI_Init();
-  GUI_CURSOR_Show();
-  CreateFramewin();
-  WM_MULTIBUF_Enable(1);
 
-  while(1)
-  {
-    GUI_Delay(100);
-  }
-}
 /**
   * @brief System Clock Configuration
   * @retval None

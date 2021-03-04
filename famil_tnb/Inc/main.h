@@ -35,8 +35,10 @@ extern "C" {
 #include "task.h"
 #include <stdio.h>
 #include "stdlib.h"
+#include "math.h"
 
 #include "GUI.h"
+#include "DIALOG.h"
   
 #include "spi.h"  
 #include "i2c.h"  
@@ -53,21 +55,28 @@ extern "C" {
 #include "w25qxx.h" 
 #include "dht11.h" 
 #include "ds3231.h"
+#include "gui_common.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+extern WM_HWIN ui_main(void);
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/
 /* USER CODE BEGIN ET */
 
+extern QueueHandle_t ParaSensorQue;  
+
+void Task_Lcd(void *pvParameters);
+void Task_Core(void *pvParameters);
 /* USER CODE END ET */
 
 /* Exported constants --------------------------------------------------------*/
 /* USER CODE BEGIN EC */
-
+void draw_bitmap(void);
+void zoom_bitmap(int Xmag,int Ymag);
 /* USER CODE END EC */
-
+void draw_bitmap(void);
+void zoom_bitmap(int Xmag,int Ymag);
 /* Exported macro ------------------------------------------------------------*/
 /* USER CODE BEGIN EM */
 
