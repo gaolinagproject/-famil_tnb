@@ -32,6 +32,8 @@ void Task_Lcd(void *pvParameters)
   GUI_SetBkColor(UCLOR_TITLE);
   GUI_UC_SetEncodeUTF8();
   ui_main();
+  CreateUiKeypad();
+  CreateUiWarning();
   while(1)
   {
     GUI_Delay(100);

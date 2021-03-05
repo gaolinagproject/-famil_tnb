@@ -1252,6 +1252,15 @@
                 <name>$PROJ_DIR$\..\UserInterface\gui_common.c</name>
             </file>
             <file>
+                <name>$PROJ_DIR$\..\UserInterface\gui_keypad.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\UserInterface\gui_warning.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\UserInterface\ui_clock.c</name>
+            </file>
+            <file>
                 <name>$PROJ_DIR$\..\UserInterface\ui_main.c</name>
             </file>
         </group>

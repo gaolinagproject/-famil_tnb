@@ -58,7 +58,7 @@ extern "C" {
 #include "gui_common.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-extern WM_HWIN ui_main(void);
+
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/

@@ -90,7 +90,7 @@ static const GUI_WIDGET_CREATE_INFO _aDialogCreate[] = {
 */
 WM_HWIN ui_main_hWin = NULL;
  
-void refresh_page()
+static void refresh_page()
 {
     WM_HWIN hItem;
     char tmp_str[40] = {0};
@@ -309,6 +309,8 @@ static void _cbDialog(WM_MESSAGE * pMsg) {
       case WM_NOTIFICATION_RELEASED:
         // USER START (Optionally insert code for reacting on notification message)
         // USER END
+        WM_DeleteWindow(pMsg->hWin);
+        ui_clock();
         break;
       // USER START (Optionally insert additional code for further notification handling)
       // USER END
