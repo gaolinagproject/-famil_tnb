@@ -222,8 +222,13 @@ static void refresh_page()
     TEXT_SetFont(hItem, &GUI_Font_micro_25);
     TEXT_SetBkColor(hItem,GUI_INVALID_COLOR);
     TEXT_SetTextColor(hItem,GUI_RED); 
-    
 
+    data_set_lcd.year = sensor_data_lcd.year;
+    data_set_lcd.month = sensor_data_lcd.month;
+    data_set_lcd.date = sensor_data_lcd.date;
+    data_set_lcd.hour = sensor_data_lcd.hour;
+    data_set_lcd.min = sensor_data_lcd.min;
+    data_set_lcd.week = sensor_data_lcd.week;
 }
 // USER START (Optionally insert additional static code)
 // USER END
@@ -295,6 +300,8 @@ static void _cbDialog(WM_MESSAGE * pMsg) {
       case WM_NOTIFICATION_RELEASED:
         // USER START (Optionally insert code for reacting on notification message)
         // USER END
+        WM_DeleteWindow(pMsg->hWin);
+        ui_parameter();
         break;
       // USER START (Optionally insert additional code for further notification handling)
       // USER END
@@ -339,6 +346,7 @@ static void _cbDialog(WM_MESSAGE * pMsg) {
 *
 *       ui_main
 */
+
 WM_HWIN ui_main(void);
 WM_HWIN ui_main(void) {
   WM_HWIN hWin;
@@ -350,6 +358,7 @@ WM_HWIN ui_main(void) {
 
   WM_CreateTimer(hWin, 0, 1000, 0);
   ui_main_hWin = hWin;
+  data_set_lcd.inquire_ui_hWin = ui_main_hWin;
   return hWin;
   
 

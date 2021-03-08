@@ -63,8 +63,10 @@ extern "C" {
 
 /* Exported types ------------------------------------------------------------*/
 /* USER CODE BEGIN ET */
-
+extern SemaphoreHandle_t ButtonArmSemaphore;
+extern SemaphoreHandle_t ClockArmSemaphore;
 extern QueueHandle_t ParaSensorQue;  
+extern QueueHandle_t ParaClockQue;  
 
 void Task_Lcd(void *pvParameters);
 void Task_Core(void *pvParameters);

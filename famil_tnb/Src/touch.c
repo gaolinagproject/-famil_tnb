@@ -247,6 +247,7 @@ void TP_Save_Adjdata(void)
 uint8_t TP_Get_Adjdata(void)
 {
   
+
   
         W25QXX_Read(flash_tp_dve.f_tp_cbuf,ADDR_FLASH_TOUCH,12);
         

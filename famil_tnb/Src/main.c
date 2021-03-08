@@ -33,9 +33,12 @@
 #define CORE_TASK_PRIO		3
 #define CORE_STK_SIZE 		256 
 
-    
+ 
+SemaphoreHandle_t ClockArmSemaphore;
+SemaphoreHandle_t ButtonArmSemaphore;
+
 QueueHandle_t ParaSensorQue;  
-    
+QueueHandle_t ParaClockQue;      
     
 void Task0_Task(void *pvParameters);
 
@@ -70,7 +73,10 @@ int main(void)
   HAL_UART_Receive_IT(&huart2, (uint8_t*)recv_buf1, 20);
   
   
+  ButtonArmSemaphore = xSemaphoreCreateBinary();
+  ClockArmSemaphore = xSemaphoreCreateBinary();
   ParaSensorQue   =  xQueueCreate(5, sizeof(sensor_data_t));
+  ParaClockQue    =  xQueueCreate(5, sizeof(data_set_t));
   /* USER CODE BEGIN 2 */
   xTaskCreate(Task0_Task,      "Task0_Task",        TEST0_STK_SIZE,NULL, 	TEST0_TASK_PRIO, 	NULL);    
   xTaskCreate(Task_Lcd,        "Task_Lcd",        LCD_STK_SIZE,NULL, 	LCD_TASK_PRIO, 	NULL);      

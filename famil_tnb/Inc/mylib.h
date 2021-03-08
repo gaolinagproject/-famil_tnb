@@ -3,7 +3,7 @@
 #include "main.h"
 //mp3部分
 void mp3_test();
-
+void mp3_control(uint8_t num);
 //sgp30部分
 #define SGP30_ADDR          0x58
 #define SGP30_ADDR_WRITE    SGP30_ADDR<<1       //0xb0
@@ -47,4 +47,26 @@ typedef struct sensor_data{
 }sensor_data_t;
 extern sensor_data_t sensor_data_core;
 extern sensor_data_t sensor_data_lcd;
+
+
+typedef struct system_data{
+
+    uint8_t a_clock_num[3];
+    uint8_t a_clock_hour[3];
+    uint8_t a_clock_min[3];
+    uint8_t start_time[2];
+    uint8_t arm_time;
+  
+}system_data_t;
+
+
+
+
+
+typedef union 
+{
+  system_data_t system_data_core;
+  uint8_t system_data_buf[sizeof(system_data_t)];
+}un_system_data_t;
+extern un_system_data_t  un_system_data_core;
 #endif 

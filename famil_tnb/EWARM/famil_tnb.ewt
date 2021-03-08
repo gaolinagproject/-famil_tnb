@@ -1263,6 +1263,9 @@
             <file>
                 <name>$PROJ_DIR$\..\UserInterface\ui_main.c</name>
             </file>
+            <file>
+                <name>$PROJ_DIR$\..\UserInterface\ui_parameter.c</name>
+            </file>
         </group>
     </group>
     <group>

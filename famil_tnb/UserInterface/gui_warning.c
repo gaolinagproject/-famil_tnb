@@ -1,5 +1,5 @@
 ﻿#include "gui_common.h"
-
+#include "main.h"
 #include "stdlib.h"
 #include "string.h"
 #include "gui_common.h"
@@ -70,18 +70,12 @@ static void InitDialog(WM_MESSAGE * pMsg)
 	FRAMEWIN_SetTextAlign(hWin,GUI_TA_VCENTER|GUI_TA_CENTER);
 	FRAMEWIN_SetTitleHeight(hWin,30);
 	FRAMEWIN_SetTextColor(hWin,UCLOR_WHITE);
-//	FRAMEWIN_SetBkColor(hWin, GUI_MAKE_COLOR(0x00FFFF80));
 	//
 	//GUI_ID_TEXT0
 	//
 	TEXT_SetFont(WM_GetDialogItem(hWin,GUI_ID_TEXT0),&GUI_Font_micro_25);
 	TEXT_SetTextAlign(WM_GetDialogItem(hWin,GUI_ID_TEXT0),GUI_TA_VCENTER|GUI_TA_CENTER);
-      //TEXT_SetTextAlign(WM_GetDialogItem(hWin,GUI_ID_TEXT0), GUI_TA_CENTER | GUI_TA_VCENTER);
-	//
-	//GUI_ID_BUTTON0
-	//
-	//BUTTON_SetFont(WM_GetDialogItem(hWin,GUI_ID_BUTTON0),&GUI_Font_micro_25);
-	//BUTTON_SetTextColor(WM_GetDialogItem(hWin,GUI_ID_BUTTON0),0,UCLOR_WHITE);
+
 
 }
 
@@ -93,13 +87,10 @@ static void drawWarn(WM_HWIN hWin)
 		case WARN_BLACK_TEXT:
 			TEXT_SetTextColor(WM_GetDialogItem(hWin,GUI_ID_TEXT0),GUI_BLACK);
 			TEXT_SetText(WM_GetDialogItem(hWin,GUI_ID_TEXT0),warnStr);
-		//	TEXT_SetTextAlign(WM_GetDialogItem(hWin,GUI_ID_TEXT0), GUI_TA_CENTER | GUI_TA_VCENTER);
-		//	BUTTON_SetTextColor(WM_GetDialogItem(hWin,GUI_ID_BUTTON0),0,GUI_BLACK);
 			break;
 		case WARN_RED_TEXT:
 			TEXT_SetTextColor(WM_GetDialogItem(hWin,GUI_ID_TEXT0),UCLOR_BLACK);
 			TEXT_SetText(WM_GetDialogItem(hWin,GUI_ID_TEXT0),warnStr);
-		//	TEXT_SetTextAlign(WM_GetDialogItem(hWin,GUI_ID_TEXT0), GUI_TA_CENTER | GUI_TA_VCENTER);
 			break;
 		default:
 			break;
@@ -108,10 +99,8 @@ static void drawWarn(WM_HWIN hWin)
 
 
 void endWarningShow(void)
-{
-  
- // WM_DeleteWindow(ui_keyWarn_hWin);
-
+{    
+        xSemaphoreGive(ButtonArmSemaphore);
 	WM_HideWindow(ui_keyWarn_hWin);
 	WM_MakeModal(ui_keyWarnParent_hWin);		
 	WM_SelectWindow(ui_keyWarnParent_hWin);
@@ -120,7 +109,7 @@ void endWarningShow(void)
 }
 /*********************************************************************
 *
-*       Dialog callback routine
+*       Dialog callback routine xSemaphoreGive(ClockArmSemaphore);
 */
 static void _cbCallback(WM_MESSAGE * pMsg) 
 {
@@ -137,7 +126,7 @@ static void _cbCallback(WM_MESSAGE * pMsg)
 	    
             InitDialog(pMsg);	
 		hItem= WM_GetDialogItem(pMsg->hWin, GUI_ID_BUTTON0);
-		button_user_skin_set(hItem,"确认",NULL,0);
+		button_user_skin_set(hItem,"确定",NULL,0);
             break;
 
         case WM_NOTIFY_PARENT:
@@ -148,7 +137,7 @@ static void _cbCallback(WM_MESSAGE * pMsg)
 			{
 				case GUI_ID_BUTTON0:
 					endWarningShow();
-					//WM_HideWindow(ui_keyWarn_hWin);
+                                      
 					break;
 			}
 		}
@@ -177,7 +166,6 @@ int uiWarning(WM_HWIN hWinParent,int type,char *title,char *str,int timeOut )
 	CreateUiWarning();
 	hWin = ui_keyWarn_hWin;
 	
-//	WM_MakeModal(hWin);
 	
 	WM_ShowWindow(hWin);
 	WM_BringToTop(hWin);

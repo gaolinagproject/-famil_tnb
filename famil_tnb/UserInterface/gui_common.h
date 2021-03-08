@@ -32,19 +32,26 @@ extern int *setValue_data;
 
 typedef struct data_set{
 
+    unsigned short  year;   
     unsigned short  month;
     unsigned short  date;
     unsigned short  week; 
     unsigned short  hour;
     unsigned short  min;
+    unsigned short  time_en;    
     unsigned short  a_clock_num[3];
     unsigned short  a_clock_hour[3];
     unsigned short  a_clock_min[3];
-    unsigned short  year;
+    unsigned short  start_time[2];
+    unsigned short  arm_time;
+    WM_HWIN inquire_ui_hWin;
+
     
 }data_set_t;
 
 extern data_set_t data_set_lcd;
+extern data_set_t data_set_core;
+
 
 typedef  struct user_data{
 	void *data;
@@ -97,7 +104,7 @@ extern keypad_t keypad;
 
 extern WM_HWIN ui_main(void);
 extern WM_HWIN ui_clock(void);
-
+extern WM_HWIN ui_parameter(void);
 
 void CreateUiKeypad(void);
 void CreateUiWarning(void);

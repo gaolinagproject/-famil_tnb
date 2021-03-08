@@ -1550,6 +1550,45 @@ GUI_CONST_STORAGE unsigned char acGUI_Font_micro_25_4F5C[ 54] = { /* code 4F5C *
   ___X____,___X____,________,
   ___X____,___X____,________};
 
+GUI_CONST_STORAGE unsigned char acGUI_Font_micro_25_5047[ 51] = { /* code 5047 */
+  ___X____,________,________,
+  ___X_XXX,XXX_XXXX,XX______,
+  __X__X__,__X_____,_X______,
+  __X__X__,__X_____,_X______,
+  __X__X__,__X_____,_X______,
+  __X__XXX,XXX_XXXX,XX______,
+  _XX__X__,__X_____,_X______,
+  _XX__X__,________,________,
+  X_X__XXX,XXXXXXXX,XX______,
+  X_X__X__,____X___,_X______,
+  __X__X__,____X___,X_______,
+  __X__X__,____XX__,X_______,
+  __X__XXX,XXX__X_X,________,
+  __X__X__,_____XX_,________,
+  __X__X__,_____XXX,________,
+  __X__X__,___XX___,XX______,
+  __X__X__,_XX_____,_XX_____};
+
+GUI_CONST_STORAGE unsigned char acGUI_Font_micro_25_505C[ 54] = { /* code 505C */
+  ___X____,_X______,________,
+  ___X____,__X_____,________,
+  __XXXXXX,XXXXXXXX,X_______,
+  __X_____,________,________,
+  __X___XX,XXXXXXX_,________,
+  __X___X_,______X_,________,
+  _XX___XX,XXXXXXX_,________,
+  _XX___X_,______X_,________,
+  X_X_____,________,________,
+  X_X_XXXX,XXXXXXXX,X_______,
+  __X_X___,________,X_______,
+  __X_X___,________,X_______,
+  __X___XX,XXXXXXX_,________,
+  __X_____,___X____,________,
+  __X_____,___X____,________,
+  __X_____,___X____,________,
+  __X_____,___X____,________,
+  __X_____,XXXX____,________};
+
 GUI_CONST_STORAGE unsigned char acGUI_Font_micro_25_516D[ 54] = { /* code 516D */
   _______X,________,________,
   ________,X_______,________,
@@ -1608,6 +1647,25 @@ GUI_CONST_STORAGE unsigned char acGUI_Font_micro_25_5230[ 54] = { /* code 5230 *
   _____XXX,XXX_____,X_______,
   XXXXX___,________,X_______,
   ________,____XXXX,________};
+
+GUI_CONST_STORAGE unsigned char acGUI_Font_micro_25_529F[ 51] = { /* code 529F */
+  ________,__X_____,________,
+  ________,__X_____,________,
+  XXXXXXX_,__X_____,________,
+  ___X____,__X_____,________,
+  ___X___X,XXXXXXXX,XX______,
+  ___X____,__X_____,XX______,
+  ___X____,__X_____,XX______,
+  ___X____,__X_____,X_______,
+  ___X____,__X_____,X_______,
+  ___X____,__X_____,X_______,
+  ___X____,_XX_____,X_______,
+  ___X__XX,_X______,X_______,
+  __XXXX__,XX______,X_______,
+  XX______,X_______,X_______,
+  _______X,________,X_______,
+  _____XX_,________,X_______,
+  ____XX__,___XXXXX,________};
 
 GUI_CONST_STORAGE unsigned char acGUI_Font_micro_25_5316[ 54] = { /* code 5316 */
   _____X__,__X_____,________,
@@ -1668,26 +1726,6 @@ GUI_CONST_STORAGE unsigned char acGUI_Font_micro_25_53C2[ 54] = { /* code 53C2 *
   ________,__XXX___,________,
   _______X,XX______,________,
   ___XXXX_,________,________};
-
-GUI_CONST_STORAGE unsigned char acGUI_Font_micro_25_544A[ 54] = { /* code 544A */
-  ____X___,_X______,________,
-  ___XX___,_X______,________,
-  ___X____,_X______,________,
-  __XXXXXX,XXXXXXXX,X_______,
-  __X_____,_X______,________,
-  _X______,_X______,________,
-  ________,_X______,________,
-  XXXXXXXX,XXXXXXXX,XX______,
-  ________,________,________,
-  ________,________,________,
-  ________,________,________,
-  ___XXXXX,XXXXXXXX,________,
-  ___X____,_______X,________,
-  ___X____,_______X,________,
-  ___X____,_______X,________,
-  ___X____,_______X,________,
-  ___XXXXX,XXXXXXXX,________,
-  ___X____,_______X,________};
 
 GUI_CONST_STORAGE unsigned char acGUI_Font_micro_25_5468[ 51] = { /* code 5468 */
   __XXXXXX,XXXXXXXX,X_______,
@@ -1805,6 +1843,44 @@ GUI_CONST_STORAGE unsigned char acGUI_Font_micro_25_5B9A[ 54] = { /* code 5B9A *
   _X_____X,XXXXXXXX,XX______,
   X_______,________,________};
 
+GUI_CONST_STORAGE unsigned char acGUI_Font_micro_25_5C0F[ 51] = { /* code 5C0F */
+  ________,_X______,________,
+  ________,_X______,________,
+  ________,_X______,________,
+  ________,_X______,________,
+  ____X___,_X___X__,________,
+  ___XX___,_X____X_,________,
+  ___X____,_X____XX,________,
+  ___X____,_X_____X,________,
+  __X_____,_X_____X,X_______,
+  __X_____,_X______,X_______,
+  _X______,_X______,_X______,
+  XX______,_X______,_XX_____,
+  X_______,_X______,__X_____,
+  ________,_X______,________,
+  ________,_X______,________,
+  ________,_X______,________,
+  ____XXXX,X_______,________};
+
+GUI_CONST_STORAGE unsigned char acGUI_Font_micro_25_5C4F[ 51] = { /* code 5C4F */
+  __XXXXXX,XXXXXXXX,X_______,
+  __X_____,________,X_______,
+  __X_____,________,X_______,
+  __XXXXXX,XXXXXXXX,X_______,
+  __X___XX,_____X__,X_______,
+  __X____X,X___XX__,________,
+  __X_____,X___X___,________,
+  __X_XXXX,XXXXXXXX,X_______,
+  __X____X,_____X__,________,
+  __X____X,_____X__,________,
+  __X____X,_____X__,________,
+  __XXXXXX,XXXXXXXX,XX______,
+  __X____X,_____X__,________,
+  _X_____X,_____X__,________,
+  _X____X_,_____X__,________,
+  _X___XX_,_____X__,________,
+  X___XX__,_____X__,________};
+
 GUI_CONST_STORAGE unsigned char acGUI_Font_micro_25_5DE5[ 48] = { /* code 5DE5 */
   _XXXXXXX,XXXXXXXX,________,
   ________,X_______,________,
@@ -1841,6 +1917,26 @@ GUI_CONST_STORAGE unsigned char acGUI_Font_micro_25_5DEE[ 51] = { /* code 5DEE *
   _XX_____,__X_____,________,
   XX______,__X_____,________,
   ___XXXXX,XXXXXXXX,XXX_____};
+
+GUI_CONST_STORAGE unsigned char acGUI_Font_micro_25_5E55[ 54] = { /* code 5E55 */
+  ______X_,____X___,________,
+  _XXXXXXX,XXXXXXXX,XX______,
+  ______X_,____X___,________,
+  ________,________,________,
+  ___XXXXX,XXXXXXXX,________,
+  ___X____,_______X,________,
+  ___XXXXX,XXXXXXXX,________,
+  ___X____,_______X,________,
+  ___XXXXX,XXXXXXXX,________,
+  ___X___X,_______X,________,
+  ______X_,________,________,
+  _XXXXXXX,XXXXXXXX,XX______,
+  ___XX___,_X___XX_,________,
+  __XXXXXX,XXXXXXXX,X_______,
+  XX__X___,_X____X_,_XX_____,
+  ____X___,_X____X_,________,
+  ____X___,_X_XXXX_,________,
+  ________,_X______,________};
 
 GUI_CONST_STORAGE unsigned char acGUI_Font_micro_25_5E74[ 54] = { /* code 5E74 */
   ____X___,________,________,
@@ -1882,26 +1978,6 @@ GUI_CONST_STORAGE unsigned char acGUI_Font_micro_25_5EA6[ 54] = { /* code 5EA6 *
   XX___XXX,____XXX_,________,
   X__XXX__,_______X,XX______};
 
-GUI_CONST_STORAGE unsigned char acGUI_Font_micro_25_5F0F[ 54] = { /* code 5F0F */
-  ________,___X__X_,________,
-  ________,___X___X,X_______,
-  ________,___X___X,________,
-  XXXXXXXX,XXXXXXXX,XXX_____,
-  ________,___X____,________,
-  ________,___X____,________,
-  ________,___X____,________,
-  ________,___X____,________,
-  _XXXXXXX,XX__X___,________,
-  _____X__,____X___,________,
-  _____X__,____X___,________,
-  _____X__,____X___,________,
-  _____X__,____X___,__X_____,
-  _____X__,_____X__,__X_____,
-  _____X_X,XXX__X__,__X_____,
-  ___XXXX_,_____XX_,_X______,
-  XXX_____,______XX,XX______,
-  ________,_______X,XX______};
-
 GUI_CONST_STORAGE unsigned char acGUI_Font_micro_25_5F88[ 57] = { /* code 5F88 */
   _____X__,________,________,
   _____X__,XXXXXXXX,X_______,
@@ -1922,6 +1998,25 @@ GUI_CONST_STORAGE unsigned char acGUI_Font_micro_25_5F88[ 57] = { /* code 5F88 *
   ___X____,X__XX__X,________,
   ___X____,XXXX____,XX______,
   ___X___X,X_______,_XX_____};
+
+GUI_CONST_STORAGE unsigned char acGUI_Font_micro_25_6210[ 51] = { /* code 6210 */
+  ________,___X_XX_,________,
+  ________,___X__XX,________,
+  ________,___X___X,________,
+  __XXXXXX,XXXXXXXX,XXX_____,
+  __X_____,___X____,________,
+  __X_____,___X____,________,
+  __X_____,___X____,_X______,
+  __XXXXXX,XX_X____,XX______,
+  __X_____,X__X____,X_______,
+  __X_____,X__XX__X,________,
+  __X_____,X___X_XX,________,
+  __X_____,X___XXX_,________,
+  __X_____,X___XX__,__X_____,
+  _X______,X___XX__,__X_____,
+  _X__XXXX,___XXXX_,__X_____,
+  XX______,__XX__X_,_X______,
+  X_______,_XX____X,XX______};
 
 GUI_CONST_STORAGE unsigned char acGUI_Font_micro_25_63D0[ 54] = { /* code 63D0 */
   __X_____,________,________,
@@ -2039,6 +2134,24 @@ GUI_CONST_STORAGE unsigned char acGUI_Font_micro_25_661F[ 48] = { /* code 661F *
   ________,X_______,________,
   XXXXXXXX,XXXXXXXX,X_______};
 
+GUI_CONST_STORAGE unsigned char acGUI_Font_micro_25_663E[ 48] = { /* code 663E */
+  __XXXXXX,XXXXXXXX,________,
+  __X_____,_______X,________,
+  __X_____,_______X,________,
+  __XXXXXX,XXXXXXXX,________,
+  __X_____,_______X,________,
+  __X_____,_______X,________,
+  __XXXXXX,XXXXXXXX,________,
+  __X_____,_______X,________,
+  _X____X_,___X____,X_______,
+  _XX___X_,___X___X,X_______,
+  __X___X_,___X___X,________,
+  ___X__X_,___X__X_,________,
+  ___XX_X_,___X_XX_,________,
+  ____X_X_,___X_X__,________,
+  ______X_,___X____,________,
+  XXXXXXXX,XXXXXXXX,XX______};
+
 GUI_CONST_STORAGE unsigned char acGUI_Font_micro_25_6708[ 34] = { /* code 6708 */
   ___XXXXX,XXXXXX__,
   ___X____,_____X__,
@@ -2077,26 +2190,6 @@ GUI_CONST_STORAGE unsigned char acGUI_Font_micro_25_671F[ 51] = { /* code 671F *
   _XX____X,XXX_____,X_______,
   _X______,_X___XXX,X_______};
 
-GUI_CONST_STORAGE unsigned char acGUI_Font_micro_25_683C[ 54] = { /* code 683C */
-  ___X____,___X____,________,
-  ___X____,__XX____,________,
-  ___X____,__XXXXXX,XX______,
-  ___X____,_XX_____,XX______,
-  XXXXXXX_,XXX____X,X_______,
-  ___X____,X_XX__XX,________,
-  ___XX__X,___XXXX_,________,
-  __XXXX__,____XXX_,________,
-  __XX_XX_,__XX__XX,X_______,
-  _X_X___X,XX______,_XX_____,
-  _X_X__XX,________,________,
-  XX_X____,XXXXXXXX,X_______,
-  X__X____,X_______,X_______,
-  ___X____,X_______,X_______,
-  ___X____,X_______,X_______,
-  ___X____,X_______,X_______,
-  ___X____,XXXXXXXX,X_______,
-  ___X____,X_______,X_______};
-
 GUI_CONST_STORAGE unsigned char acGUI_Font_micro_25_6B21[ 54] = { /* code 6B21 */
   ________,_X______,________,
   _X______,_X______,________,
@@ -2116,6 +2209,27 @@ GUI_CONST_STORAGE unsigned char acGUI_Font_micro_25_6B21[ 54] = { /* code 6B21 *
   X_____XX,_______X,X_______,
   X___XX__,________,XX______,
   ___XX___,________,_XX_____};
+
+GUI_CONST_STORAGE unsigned char acGUI_Font_micro_25_6BCF[ 57] = { /* code 6BCF */
+  ____XX__,________,________,
+  ___XX___,________,________,
+  ___XXXXX,XXXXXXXX,XX______,
+  __XX____,________,________,
+  _XX_____,________,________,
+  _X__XXXX,XXXXXXX_,________,
+  X___X___,X_____X_,________,
+  ___XX___,XX____X_,________,
+  ___X____,_XX___X_,________,
+  ___X____,__X___X_,________,
+  XXXXXXXX,XXXXXXXX,XX______,
+  ___X___X,______X_,________,
+  __XX____,X_____X_,________,
+  __X_____,_X____X_,________,
+  __X_____,__X___X_,________,
+  __XXXXXX,XXXXXXXX,X_______,
+  ________,______X_,________,
+  ________,______X_,________,
+  ________,__XXXX__,________};
 
 GUI_CONST_STORAGE unsigned char acGUI_Font_micro_25_6C27[ 54] = { /* code 6C27 */
   ____X___,________,________,
@@ -2177,6 +2291,25 @@ GUI_CONST_STORAGE unsigned char acGUI_Font_micro_25_6E7F[ 54] = { /* code 6E7F *
   X___XXXX,XXXXXXXX,XX______,
   X_______,________,________};
 
+GUI_CONST_STORAGE unsigned char acGUI_Font_micro_25_7528[ 51] = { /* code 7528 */
+  __XXXXXX,XXXXXXXX,X_______,
+  __X_____,_X______,X_______,
+  __X_____,_X______,X_______,
+  __X_____,_X______,X_______,
+  __X_____,_X______,X_______,
+  __XXXXXX,XXXXXXXX,X_______,
+  __X_____,_X______,X_______,
+  __X_____,_X______,X_______,
+  __X_____,_X______,X_______,
+  __X_____,_X______,X_______,
+  __XXXXXX,XXXXXXXX,X_______,
+  __X_____,_X______,X_______,
+  __X_____,_X______,X_______,
+  _X______,_X______,X_______,
+  _X______,_X______,X_______,
+  XX______,_X______,X_______,
+  X_______,_X__XXXX,________};
+
 GUI_CONST_STORAGE unsigned char acGUI_Font_micro_25_7532[ 34] = { /* code 7532 */
   XXXXXXXX,XXXXXX__,
   X______X,_____X__,
@@ -2195,6 +2328,26 @@ GUI_CONST_STORAGE unsigned char acGUI_Font_micro_25_7532[ 34] = { /* code 7532 *
   _______X,________,
   _______X,________,
   _______X,________};
+
+GUI_CONST_STORAGE unsigned char acGUI_Font_micro_25_7684[ 54] = { /* code 7684 */
+  ___X____,___X____,________,
+  __X_____,__X_____,________,
+  XXXXXXX_,__XXXXXX,________,
+  X_____X_,_X_____X,________,
+  X_____X_,X______X,________,
+  X_____X_,X______X,________,
+  X_____XX,_______X,________,
+  X_____X_,_X_____X,________,
+  X_____X_,__X____X,________,
+  XXXXXXX_,__XX___X,________,
+  X_____X_,___XX__X,________,
+  X_____X_,____XX_X,________,
+  X_____X_,_____X_X,________,
+  X_____X_,_______X,________,
+  X_____X_,_______X,________,
+  X_____X_,_______X,________,
+  XXXXXXX_,______XX,________,
+  X_____X_,__XXXXXX,________};
 
 GUI_CONST_STORAGE unsigned char acGUI_Font_micro_25_786E[ 57] = { /* code 786E */
   ________,___X____,________,
@@ -2373,47 +2526,6 @@ GUI_CONST_STORAGE unsigned char acGUI_Font_micro_25_826F[ 57] = { /* code 826F *
   XXXXX___,____XXX_,________,
   XX______,_______X,XX______};
 
-GUI_CONST_STORAGE unsigned char acGUI_Font_micro_25_8B66[ 57] = { /* code 8B66 */
-  ___X___X,_____X__,________,
-  XXXXXXXX,XXXXXX__,________,
-  __X_____,____XXXX,XXX_____,
-  _XXXXXXX,X__XXX__,X_______,
-  _X______,X__X_X_X,________,
-  XXXXXXX_,X_____XX,________,
-  X_X___X_,X__XXX__,XXX_____,
-  __XXXXXX,X_______,________,
-  ________,__X_____,________,
-  XXXXXXXX,XXXXXXXX,XXX_____,
-  ________,________,________,
-  ___XXXXX,XXXXXXXX,________,
-  ________,________,________,
-  ___XXXXX,XXXXXXXX,________,
-  ________,________,________,
-  ___XXXXX,XXXXXXXX,________,
-  ___X____,_______X,________,
-  ___XXXXX,XXXXXXXX,________,
-  ___X____,_______X,________};
-
-GUI_CONST_STORAGE unsigned char acGUI_Font_micro_25_8BA4[ 54] = { /* code 8BA4 */
-  __X_____,___X____,________,
-  __XX____,___X____,________,
-  ___XX___,___X____,________,
-  ____XX__,___X____,________,
-  _____X__,___X____,________,
-  ________,___X____,________,
-  XXXX____,___X____,________,
-  ___X____,___X____,________,
-  ___X____,___XX___,________,
-  ___X____,__X_X___,________,
-  ___X____,__X_X___,________,
-  ___X__X_,__X_XX__,________,
-  ___X_XX_,_X___X__,________,
-  ___X_X__,_X___X__,________,
-  ___XX___,X_____X_,________,
-  ___X___X,X_____XX,________,
-  ______XX,_______X,X_______,
-  _____XX_,________,XX______};
-
 GUI_CONST_STORAGE unsigned char acGUI_Font_micro_25_8BBE[ 51] = { /* code 8BBE */
   _X______,XXXXXXX_,________,
   __X_____,X_____X_,________,
@@ -2433,43 +2545,24 @@ GUI_CONST_STORAGE unsigned char acGUI_Font_micro_25_8BBE[ 51] = { /* code 8BBE *
   _____XXX,_____XXX,________,
   ___XXX__,_______X,X_______};
 
-GUI_CONST_STORAGE unsigned char acGUI_Font_micro_25_8BEF[ 51] = { /* code 8BEF */
-  _X_____X,XXXXXXXX,X_______,
-  __X____X,________,X_______,
-  ___XX__X,________,X_______,
-  ____X__X,________,X_______,
-  _______X,XXXXXXXX,X_______,
-  XXX____X,________,X_______,
-  __X_____,________,________,
-  __X___XX,XXXXXXXX,XX______,
-  __X_____,___X____,________,
-  __X_____,___X____,________,
-  __X__XXX,XXXXXXXX,XXX_____,
-  __X_____,__X_X___,________,
-  __X_X___,_XX_X___,________,
-  __XXX___,XX___X__,________,
-  __XX___X,X_____XX,________,
-  _X___XXX,_______X,XXX_____,
-  _____X__,________,_X______};
-
-GUI_CONST_STORAGE unsigned char acGUI_Font_micro_25_8D85[ 54] = { /* code 8D85 */
+GUI_CONST_STORAGE unsigned char acGUI_Font_micro_25_8D77[ 54] = { /* code 8D77 */
   ____X___,________,________,
-  ____X___,XXXXXXXX,X_______,
-  ____X___,___X____,X_______,
-  _XXXXXXX,___X____,X_______,
-  ____X___,___X____,X_______,
-  ____X___,__X_____,X_______,
-  ____X___,_XX_XXXX,________,
-  _XXXXXXX,XX______,________,
-  _____X__,__XXXXXX,X_______,
-  __X__X__,__X_____,X_______,
-  __X__X__,__X_____,X_______,
-  __X__XXX,X_X_____,X_______,
-  __X__X__,__X_____,X_______,
-  _XXX_X__,__XXXXXX,X_______,
-  _X_XXX__,__X_____,X_______,
+  ____X___,__XXXXXX,X_______,
+  ____X___,________,X_______,
+  _XXXXXXX,X_______,X_______,
+  ____X___,________,X_______,
+  ____X___,________,X_______,
+  _XXXXXXX,X_XXXXXX,X_______,
+  _____X__,__X_____,X_______,
+  __X__X__,__X_____,________,
+  __X__X__,__X_____,________,
+  __X__X__,__X_____,_X______,
+  __X__XXX,X_X_____,_X______,
+  __X__X__,__X_____,_X______,
+  _XXX_X__,___XXXXX,X_______,
+  _X_XXX__,________,________,
   _X__XX__,________,________,
-  XX___XXX,XXXXXXXX,XX______,
+  XX____XX,XXXXXXXX,XXX_____,
   X_______,________,________};
 
 GUI_CONST_STORAGE unsigned char acGUI_Font_micro_25_8FD4[ 54] = { /* code 8FD4 */
@@ -2532,26 +2625,6 @@ GUI_CONST_STORAGE unsigned char acGUI_Font_micro_25_949F[ 54] = { /* code 949F *
   ___XXX__,____X___,________,
   __XX____,____X___,________};
 
-GUI_CONST_STORAGE unsigned char acGUI_Font_micro_25_9519[ 54] = { /* code 9519 */
-  __X_____,_X___X__,________,
-  __X_____,_X___X__,________,
-  __X_____,_X___X__,________,
-  _XXXXX_X,XXXXXXXX,________,
-  _X______,_X___X__,________,
-  _X______,_X___X__,________,
-  XXXXX___,_X___X__,________,
-  X_X___XX,XXXXXXXX,X_______,
-  __X_____,________,________,
-  __X_____,________,________,
-  XXXXXX_X,XXXXXXXX,________,
-  __X____X,_______X,________,
-  __X____X,_______X,________,
-  __X__X_X,XXXXXXXX,________,
-  __X_XX_X,_______X,________,
-  __XXX__X,_______X,________,
-  __XX___X,XXXXXXXX,________,
-  __X____X,_______X,________};
-
 GUI_CONST_STORAGE unsigned char acGUI_Font_micro_25_957F[ 57] = { /* code 957F */
   ___X____,________,________,
   ___X____,_____XX_,________,
@@ -2613,27 +2686,26 @@ GUI_CONST_STORAGE unsigned char acGUI_Font_micro_25_95F9[ 36] = { /* code 95F9 *
   X_______,X______X,
   X_______,____XXX_};
 
-GUI_CONST_STORAGE unsigned char acGUI_Font_micro_25_9650[ 54] = { /* code 9650 */
-  XXXXX__X,XXXXXXX_,________,
-  X___X__X,______X_,________,
-  X__X___X,______X_,________,
-  X__X___X,______X_,________,
-  X_X____X,XXXXXXX_,________,
-  X_X____X,______X_,________,
-  X_X____X,______X_,________,
-  X_XX___X,______X_,________,
-  X__X___X,XXXXXXX_,________,
-  X__X___X,__X___X_,________,
-  X__XX__X,__X____X,X_______,
-  X___X__X,___X__XX,________,
-  X__X___X,___XXX__,________,
-  XXXX___X,____X___,________,
-  X______X,__X__X__,________,
-  X______X,XX____XX,________,
-  X_____XX,X______X,X_______,
-  X______X,________,________};
+GUI_CONST_STORAGE unsigned char acGUI_Font_micro_25_9694[ 51] = { /* code 9694 */
+  XXXXX_XX,XXXXXXXX,X_______,
+  X___X___,________,________,
+  X__X___X,XXXXXXXX,________,
+  X__X___X,_______X,________,
+  X_X____X,_______X,________,
+  X_X____X,XXXXXXXX,________,
+  X_X____X,_______X,________,
+  X__X____,________,________,
+  X__X__XX,XXXXXXXX,X_______,
+  X__X__X_,_X____X_,X_______,
+  X__X__X_,__X__X__,X_______,
+  X__X__X_,__X_X___,X_______,
+  XXXX__X_,XXXXXXX_,X_______,
+  X_____X_,___X____,X_______,
+  X_____X_,___X____,X_______,
+  X_____X_,___X____,X_______,
+  X_____X_,___X_XXX,X_______};
 
-GUI_CONST_STORAGE GUI_CHARINFO_EXT GUI_Font_micro_25_CharInfo[159] = {
+GUI_CONST_STORAGE GUI_CHARINFO_EXT GUI_Font_micro_25_CharInfo[163] = {
    {   1,   1,   0,  20,   6, acGUI_Font_micro_25_0020 } /* code 0020, SPACE */
   ,{   2,  14,   2,   6,   6, acGUI_Font_micro_25_0021 } /* code 0021, EXCLAMATION MARK */
   ,{   4,   4,   2,   6,   8, acGUI_Font_micro_25_0022 } /* code 0022, QUOTATION MARK */
@@ -2738,39 +2810,47 @@ GUI_CONST_STORAGE GUI_CHARINFO_EXT GUI_Font_micro_25_CharInfo[159] = {
   ,{  17,  14,   1,   6,  19, acGUI_Font_micro_25_4E8C } /* code 4E8C */
   ,{  18,  16,   0,   5,  19, acGUI_Font_micro_25_4E94 } /* code 4E94 */
   ,{  19,  18,   0,   4,  19, acGUI_Font_micro_25_4F5C } /* code 4F5C */
+  ,{  19,  17,   0,   4,  19, acGUI_Font_micro_25_5047 } /* code 5047 */
+  ,{  17,  18,   1,   4,  19, acGUI_Font_micro_25_505C } /* code 505C */
   ,{  17,  18,   1,   4,  19, acGUI_Font_micro_25_516D } /* code 516D */
   ,{  18,  17,   0,   5,  19, acGUI_Font_micro_25_5206 } /* code 5206 */
   ,{  17,  18,   0,   4,  19, acGUI_Font_micro_25_5230 } /* code 5230 */
+  ,{  18,  17,   0,   4,  19, acGUI_Font_micro_25_529F } /* code 529F */
   ,{  18,  18,   0,   4,  19, acGUI_Font_micro_25_5316 } /* code 5316 */
   ,{  18,  18,   0,   4,  19, acGUI_Font_micro_25_5355 } /* code 5355 */
   ,{  19,  18,   0,   4,  19, acGUI_Font_micro_25_53C2 } /* code 53C2 */
-  ,{  18,  18,   0,   4,  19, acGUI_Font_micro_25_544A } /* code 544A */
   ,{  17,  17,   0,   5,  19, acGUI_Font_micro_25_5468 } /* code 5468 */
   ,{  15,  17,   2,   5,  19, acGUI_Font_micro_25_56DB } /* code 56DB */
   ,{  16,  17,   1,   5,  19, acGUI_Font_micro_25_56DE } /* code 56DE */
   ,{  17,  17,   1,   5,  19, acGUI_Font_micro_25_5929 } /* code 5929 */
   ,{  19,  18,   0,   4,  19, acGUI_Font_micro_25_597D } /* code 597D */
   ,{  18,  18,   0,   4,  19, acGUI_Font_micro_25_5B9A } /* code 5B9A */
+  ,{  19,  17,   0,   4,  19, acGUI_Font_micro_25_5C0F } /* code 5C0F */
+  ,{  18,  17,   0,   5,  19, acGUI_Font_micro_25_5C4F } /* code 5C4F */
   ,{  17,  16,   1,   5,  19, acGUI_Font_micro_25_5DE5 } /* code 5DE5 */
   ,{  19,  17,   0,   4,  19, acGUI_Font_micro_25_5DEE } /* code 5DEE */
+  ,{  19,  18,   0,   4,  19, acGUI_Font_micro_25_5E55 } /* code 5E55 */
   ,{  18,  18,   1,   4,  19, acGUI_Font_micro_25_5E74 } /* code 5E74 */
   ,{  18,  18,   0,   4,  19, acGUI_Font_micro_25_5EA6 } /* code 5EA6 */
-  ,{  19,  18,   0,   4,  19, acGUI_Font_micro_25_5F0F } /* code 5F0F */
   ,{  19,  19,   0,   4,  19, acGUI_Font_micro_25_5F88 } /* code 5F88 */
+  ,{  19,  17,   0,   4,  19, acGUI_Font_micro_25_6210 } /* code 6210 */
   ,{  18,  18,   1,   4,  19, acGUI_Font_micro_25_63D0 } /* code 63D0 */
   ,{  18,  19,   0,   4,  19, acGUI_Font_micro_25_6570 } /* code 6570 */
   ,{  13,  17,   3,   5,  19, acGUI_Font_micro_25_65E5 } /* code 65E5 */
   ,{  18,  17,   1,   4,  19, acGUI_Font_micro_25_65F6 } /* code 65F6 */
   ,{  16,  17,   1,   5,  19, acGUI_Font_micro_25_660E } /* code 660E */
   ,{  17,  16,   1,   5,  19, acGUI_Font_micro_25_661F } /* code 661F */
+  ,{  18,  16,   1,   5,  19, acGUI_Font_micro_25_663E } /* code 663E */
   ,{  14,  17,   1,   5,  19, acGUI_Font_micro_25_6708 } /* code 6708 */
   ,{  17,  17,   0,   4,  19, acGUI_Font_micro_25_671F } /* code 671F */
-  ,{  19,  18,   0,   4,  19, acGUI_Font_micro_25_683C } /* code 683C */
   ,{  19,  18,   0,   4,  19, acGUI_Font_micro_25_6B21 } /* code 6B21 */
+  ,{  18,  19,   0,   3,  19, acGUI_Font_micro_25_6BCF } /* code 6BCF */
   ,{  19,  18,   0,   4,  19, acGUI_Font_micro_25_6C27 } /* code 6C27 */
   ,{  18,  18,   0,   4,  19, acGUI_Font_micro_25_6E29 } /* code 6E29 */
   ,{  18,  18,   1,   4,  19, acGUI_Font_micro_25_6E7F } /* code 6E7F */
+  ,{  17,  17,   0,   5,  19, acGUI_Font_micro_25_7528 } /* code 7528 */
   ,{  14,  17,   2,   5,  19, acGUI_Font_micro_25_7532 } /* code 7532 */
+  ,{  17,  18,   1,   4,  19, acGUI_Font_micro_25_7684 } /* code 7684 */
   ,{  18,  19,   0,   3,  19, acGUI_Font_micro_25_786E } /* code 786E */
   ,{  19,  18,   0,   4,  19, acGUI_Font_micro_25_78B3 } /* code 78B3 */
   ,{  19,  17,   0,   5,  19, acGUI_Font_micro_25_793A } /* code 793A */
@@ -2780,402 +2860,426 @@ GUI_CONST_STORAGE GUI_CHARINFO_EXT GUI_Font_micro_25_CharInfo[159] = {
   ,{  19,  16,   0,   5,  19, acGUI_Font_micro_25_7F6E } /* code 7F6E */
   ,{  19,  18,   0,   4,  19, acGUI_Font_micro_25_822C } /* code 822C */
   ,{  18,  19,   1,   4,  19, acGUI_Font_micro_25_826F } /* code 826F */
-  ,{  19,  19,   0,   4,  19, acGUI_Font_micro_25_8B66 } /* code 8B66 */
-  ,{  18,  18,   0,   4,  19, acGUI_Font_micro_25_8BA4 } /* code 8BA4 */
   ,{  18,  17,   1,   5,  19, acGUI_Font_micro_25_8BBE } /* code 8BBE */
-  ,{  19,  17,   0,   5,  19, acGUI_Font_micro_25_8BEF } /* code 8BEF */
-  ,{  18,  18,   0,   4,  19, acGUI_Font_micro_25_8D85 } /* code 8D85 */
+  ,{  19,  18,   0,   4,  19, acGUI_Font_micro_25_8D77 } /* code 8D77 */
   ,{  18,  18,   0,   4,  19, acGUI_Font_micro_25_8FD4 } /* code 8FD4 */
   ,{  18,  18,   1,   4,  19, acGUI_Font_micro_25_919B } /* code 919B */
   ,{  17,  18,   0,   4,  19, acGUI_Font_micro_25_949F } /* code 949F */
-  ,{  17,  18,   1,   4,  19, acGUI_Font_micro_25_9519 } /* code 9519 */
   ,{  17,  19,   1,   4,  19, acGUI_Font_micro_25_957F } /* code 957F */
   ,{  16,  18,   1,   4,  19, acGUI_Font_micro_25_95F4 } /* code 95F4 */
   ,{  16,  18,   1,   4,  19, acGUI_Font_micro_25_95F9 } /* code 95F9 */
-  ,{  17,  18,   1,   5,  19, acGUI_Font_micro_25_9650 } /* code 9650 */
+  ,{  17,  17,   1,   5,  19, acGUI_Font_micro_25_9694 } /* code 9694 */
 };
 
-GUI_CONST_STORAGE GUI_FONT_PROP_EXT GUI_Font_micro_25_Prop64 = {
-   0x9650 /* first character */
-  ,0x9650 /* last character  */
-  ,&GUI_Font_micro_25_CharInfo[158] /* address of first character */
+GUI_CONST_STORAGE GUI_FONT_PROP_EXT GUI_Font_micro_25_Prop68 = {
+   0x9694 /* first character */
+  ,0x9694 /* last character  */
+  ,&GUI_Font_micro_25_CharInfo[162] /* address of first character */
   ,(GUI_CONST_STORAGE GUI_FONT_PROP_EXT *)0 /* pointer to next GUI_FONT_PROP_EXT */
 };
 
-GUI_CONST_STORAGE GUI_FONT_PROP_EXT GUI_Font_micro_25_Prop63 = {
+GUI_CONST_STORAGE GUI_FONT_PROP_EXT GUI_Font_micro_25_Prop67 = {
    0x95F9 /* first character */
   ,0x95F9 /* last character  */
+  ,&GUI_Font_micro_25_CharInfo[161] /* address of first character */
+  ,&GUI_Font_micro_25_Prop68 /* pointer to next GUI_FONT_PROP_EXT */
+};
+
+GUI_CONST_STORAGE GUI_FONT_PROP_EXT GUI_Font_micro_25_Prop66 = {
+   0x95F4 /* first character */
+  ,0x95F4 /* last character  */
+  ,&GUI_Font_micro_25_CharInfo[160] /* address of first character */
+  ,&GUI_Font_micro_25_Prop67 /* pointer to next GUI_FONT_PROP_EXT */
+};
+
+GUI_CONST_STORAGE GUI_FONT_PROP_EXT GUI_Font_micro_25_Prop65 = {
+   0x957F /* first character */
+  ,0x957F /* last character  */
+  ,&GUI_Font_micro_25_CharInfo[159] /* address of first character */
+  ,&GUI_Font_micro_25_Prop66 /* pointer to next GUI_FONT_PROP_EXT */
+};
+
+GUI_CONST_STORAGE GUI_FONT_PROP_EXT GUI_Font_micro_25_Prop64 = {
+   0x949F /* first character */
+  ,0x949F /* last character  */
+  ,&GUI_Font_micro_25_CharInfo[158] /* address of first character */
+  ,&GUI_Font_micro_25_Prop65 /* pointer to next GUI_FONT_PROP_EXT */
+};
+
+GUI_CONST_STORAGE GUI_FONT_PROP_EXT GUI_Font_micro_25_Prop63 = {
+   0x919B /* first character */
+  ,0x919B /* last character  */
   ,&GUI_Font_micro_25_CharInfo[157] /* address of first character */
   ,&GUI_Font_micro_25_Prop64 /* pointer to next GUI_FONT_PROP_EXT */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP_EXT GUI_Font_micro_25_Prop62 = {
-   0x95F4 /* first character */
-  ,0x95F4 /* last character  */
+   0x8FD4 /* first character */
+  ,0x8FD4 /* last character  */
   ,&GUI_Font_micro_25_CharInfo[156] /* address of first character */
   ,&GUI_Font_micro_25_Prop63 /* pointer to next GUI_FONT_PROP_EXT */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP_EXT GUI_Font_micro_25_Prop61 = {
-   0x957F /* first character */
-  ,0x957F /* last character  */
+   0x8D77 /* first character */
+  ,0x8D77 /* last character  */
   ,&GUI_Font_micro_25_CharInfo[155] /* address of first character */
   ,&GUI_Font_micro_25_Prop62 /* pointer to next GUI_FONT_PROP_EXT */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP_EXT GUI_Font_micro_25_Prop60 = {
-   0x9519 /* first character */
-  ,0x9519 /* last character  */
+   0x8BBE /* first character */
+  ,0x8BBE /* last character  */
   ,&GUI_Font_micro_25_CharInfo[154] /* address of first character */
   ,&GUI_Font_micro_25_Prop61 /* pointer to next GUI_FONT_PROP_EXT */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP_EXT GUI_Font_micro_25_Prop59 = {
-   0x949F /* first character */
-  ,0x949F /* last character  */
+   0x826F /* first character */
+  ,0x826F /* last character  */
   ,&GUI_Font_micro_25_CharInfo[153] /* address of first character */
   ,&GUI_Font_micro_25_Prop60 /* pointer to next GUI_FONT_PROP_EXT */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP_EXT GUI_Font_micro_25_Prop58 = {
-   0x919B /* first character */
-  ,0x919B /* last character  */
+   0x822C /* first character */
+  ,0x822C /* last character  */
   ,&GUI_Font_micro_25_CharInfo[152] /* address of first character */
   ,&GUI_Font_micro_25_Prop59 /* pointer to next GUI_FONT_PROP_EXT */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP_EXT GUI_Font_micro_25_Prop57 = {
-   0x8FD4 /* first character */
-  ,0x8FD4 /* last character  */
+   0x7F6E /* first character */
+  ,0x7F6E /* last character  */
   ,&GUI_Font_micro_25_CharInfo[151] /* address of first character */
   ,&GUI_Font_micro_25_Prop58 /* pointer to next GUI_FONT_PROP_EXT */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP_EXT GUI_Font_micro_25_Prop56 = {
-   0x8D85 /* first character */
-  ,0x8D85 /* last character  */
+   0x7EDF /* first character */
+  ,0x7EDF /* last character  */
   ,&GUI_Font_micro_25_CharInfo[150] /* address of first character */
   ,&GUI_Font_micro_25_Prop57 /* pointer to next GUI_FONT_PROP_EXT */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP_EXT GUI_Font_micro_25_Prop55 = {
-   0x8BEF /* first character */
-  ,0x8BEF /* last character  */
+   0x7CFB /* first character */
+  ,0x7CFB /* last character  */
   ,&GUI_Font_micro_25_CharInfo[149] /* address of first character */
   ,&GUI_Font_micro_25_Prop56 /* pointer to next GUI_FONT_PROP_EXT */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP_EXT GUI_Font_micro_25_Prop54 = {
-   0x8BBE /* first character */
-  ,0x8BBE /* last character  */
+   0x79D2 /* first character */
+  ,0x79D2 /* last character  */
   ,&GUI_Font_micro_25_CharInfo[148] /* address of first character */
   ,&GUI_Font_micro_25_Prop55 /* pointer to next GUI_FONT_PROP_EXT */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP_EXT GUI_Font_micro_25_Prop53 = {
-   0x8BA4 /* first character */
-  ,0x8BA4 /* last character  */
+   0x793A /* first character */
+  ,0x793A /* last character  */
   ,&GUI_Font_micro_25_CharInfo[147] /* address of first character */
   ,&GUI_Font_micro_25_Prop54 /* pointer to next GUI_FONT_PROP_EXT */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP_EXT GUI_Font_micro_25_Prop52 = {
-   0x8B66 /* first character */
-  ,0x8B66 /* last character  */
+   0x78B3 /* first character */
+  ,0x78B3 /* last character  */
   ,&GUI_Font_micro_25_CharInfo[146] /* address of first character */
   ,&GUI_Font_micro_25_Prop53 /* pointer to next GUI_FONT_PROP_EXT */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP_EXT GUI_Font_micro_25_Prop51 = {
-   0x826F /* first character */
-  ,0x826F /* last character  */
+   0x786E /* first character */
+  ,0x786E /* last character  */
   ,&GUI_Font_micro_25_CharInfo[145] /* address of first character */
   ,&GUI_Font_micro_25_Prop52 /* pointer to next GUI_FONT_PROP_EXT */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP_EXT GUI_Font_micro_25_Prop50 = {
-   0x822C /* first character */
-  ,0x822C /* last character  */
+   0x7684 /* first character */
+  ,0x7684 /* last character  */
   ,&GUI_Font_micro_25_CharInfo[144] /* address of first character */
   ,&GUI_Font_micro_25_Prop51 /* pointer to next GUI_FONT_PROP_EXT */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP_EXT GUI_Font_micro_25_Prop49 = {
-   0x7F6E /* first character */
-  ,0x7F6E /* last character  */
+   0x7532 /* first character */
+  ,0x7532 /* last character  */
   ,&GUI_Font_micro_25_CharInfo[143] /* address of first character */
   ,&GUI_Font_micro_25_Prop50 /* pointer to next GUI_FONT_PROP_EXT */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP_EXT GUI_Font_micro_25_Prop48 = {
-   0x7EDF /* first character */
-  ,0x7EDF /* last character  */
+   0x7528 /* first character */
+  ,0x7528 /* last character  */
   ,&GUI_Font_micro_25_CharInfo[142] /* address of first character */
   ,&GUI_Font_micro_25_Prop49 /* pointer to next GUI_FONT_PROP_EXT */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP_EXT GUI_Font_micro_25_Prop47 = {
-   0x7CFB /* first character */
-  ,0x7CFB /* last character  */
+   0x6E7F /* first character */
+  ,0x6E7F /* last character  */
   ,&GUI_Font_micro_25_CharInfo[141] /* address of first character */
   ,&GUI_Font_micro_25_Prop48 /* pointer to next GUI_FONT_PROP_EXT */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP_EXT GUI_Font_micro_25_Prop46 = {
-   0x79D2 /* first character */
-  ,0x79D2 /* last character  */
+   0x6E29 /* first character */
+  ,0x6E29 /* last character  */
   ,&GUI_Font_micro_25_CharInfo[140] /* address of first character */
   ,&GUI_Font_micro_25_Prop47 /* pointer to next GUI_FONT_PROP_EXT */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP_EXT GUI_Font_micro_25_Prop45 = {
-   0x793A /* first character */
-  ,0x793A /* last character  */
+   0x6C27 /* first character */
+  ,0x6C27 /* last character  */
   ,&GUI_Font_micro_25_CharInfo[139] /* address of first character */
   ,&GUI_Font_micro_25_Prop46 /* pointer to next GUI_FONT_PROP_EXT */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP_EXT GUI_Font_micro_25_Prop44 = {
-   0x78B3 /* first character */
-  ,0x78B3 /* last character  */
+   0x6BCF /* first character */
+  ,0x6BCF /* last character  */
   ,&GUI_Font_micro_25_CharInfo[138] /* address of first character */
   ,&GUI_Font_micro_25_Prop45 /* pointer to next GUI_FONT_PROP_EXT */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP_EXT GUI_Font_micro_25_Prop43 = {
-   0x786E /* first character */
-  ,0x786E /* last character  */
+   0x6B21 /* first character */
+  ,0x6B21 /* last character  */
   ,&GUI_Font_micro_25_CharInfo[137] /* address of first character */
   ,&GUI_Font_micro_25_Prop44 /* pointer to next GUI_FONT_PROP_EXT */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP_EXT GUI_Font_micro_25_Prop42 = {
-   0x7532 /* first character */
-  ,0x7532 /* last character  */
+   0x671F /* first character */
+  ,0x671F /* last character  */
   ,&GUI_Font_micro_25_CharInfo[136] /* address of first character */
   ,&GUI_Font_micro_25_Prop43 /* pointer to next GUI_FONT_PROP_EXT */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP_EXT GUI_Font_micro_25_Prop41 = {
-   0x6E7F /* first character */
-  ,0x6E7F /* last character  */
+   0x6708 /* first character */
+  ,0x6708 /* last character  */
   ,&GUI_Font_micro_25_CharInfo[135] /* address of first character */
   ,&GUI_Font_micro_25_Prop42 /* pointer to next GUI_FONT_PROP_EXT */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP_EXT GUI_Font_micro_25_Prop40 = {
-   0x6E29 /* first character */
-  ,0x6E29 /* last character  */
+   0x663E /* first character */
+  ,0x663E /* last character  */
   ,&GUI_Font_micro_25_CharInfo[134] /* address of first character */
   ,&GUI_Font_micro_25_Prop41 /* pointer to next GUI_FONT_PROP_EXT */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP_EXT GUI_Font_micro_25_Prop39 = {
-   0x6C27 /* first character */
-  ,0x6C27 /* last character  */
+   0x661F /* first character */
+  ,0x661F /* last character  */
   ,&GUI_Font_micro_25_CharInfo[133] /* address of first character */
   ,&GUI_Font_micro_25_Prop40 /* pointer to next GUI_FONT_PROP_EXT */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP_EXT GUI_Font_micro_25_Prop38 = {
-   0x6B21 /* first character */
-  ,0x6B21 /* last character  */
+   0x660E /* first character */
+  ,0x660E /* last character  */
   ,&GUI_Font_micro_25_CharInfo[132] /* address of first character */
   ,&GUI_Font_micro_25_Prop39 /* pointer to next GUI_FONT_PROP_EXT */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP_EXT GUI_Font_micro_25_Prop37 = {
-   0x683C /* first character */
-  ,0x683C /* last character  */
+   0x65F6 /* first character */
+  ,0x65F6 /* last character  */
   ,&GUI_Font_micro_25_CharInfo[131] /* address of first character */
   ,&GUI_Font_micro_25_Prop38 /* pointer to next GUI_FONT_PROP_EXT */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP_EXT GUI_Font_micro_25_Prop36 = {
-   0x671F /* first character */
-  ,0x671F /* last character  */
+   0x65E5 /* first character */
+  ,0x65E5 /* last character  */
   ,&GUI_Font_micro_25_CharInfo[130] /* address of first character */
   ,&GUI_Font_micro_25_Prop37 /* pointer to next GUI_FONT_PROP_EXT */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP_EXT GUI_Font_micro_25_Prop35 = {
-   0x6708 /* first character */
-  ,0x6708 /* last character  */
+   0x6570 /* first character */
+  ,0x6570 /* last character  */
   ,&GUI_Font_micro_25_CharInfo[129] /* address of first character */
   ,&GUI_Font_micro_25_Prop36 /* pointer to next GUI_FONT_PROP_EXT */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP_EXT GUI_Font_micro_25_Prop34 = {
-   0x661F /* first character */
-  ,0x661F /* last character  */
+   0x63D0 /* first character */
+  ,0x63D0 /* last character  */
   ,&GUI_Font_micro_25_CharInfo[128] /* address of first character */
   ,&GUI_Font_micro_25_Prop35 /* pointer to next GUI_FONT_PROP_EXT */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP_EXT GUI_Font_micro_25_Prop33 = {
-   0x660E /* first character */
-  ,0x660E /* last character  */
+   0x6210 /* first character */
+  ,0x6210 /* last character  */
   ,&GUI_Font_micro_25_CharInfo[127] /* address of first character */
   ,&GUI_Font_micro_25_Prop34 /* pointer to next GUI_FONT_PROP_EXT */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP_EXT GUI_Font_micro_25_Prop32 = {
-   0x65F6 /* first character */
-  ,0x65F6 /* last character  */
+   0x5F88 /* first character */
+  ,0x5F88 /* last character  */
   ,&GUI_Font_micro_25_CharInfo[126] /* address of first character */
   ,&GUI_Font_micro_25_Prop33 /* pointer to next GUI_FONT_PROP_EXT */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP_EXT GUI_Font_micro_25_Prop31 = {
-   0x65E5 /* first character */
-  ,0x65E5 /* last character  */
+   0x5EA6 /* first character */
+  ,0x5EA6 /* last character  */
   ,&GUI_Font_micro_25_CharInfo[125] /* address of first character */
   ,&GUI_Font_micro_25_Prop32 /* pointer to next GUI_FONT_PROP_EXT */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP_EXT GUI_Font_micro_25_Prop30 = {
-   0x6570 /* first character */
-  ,0x6570 /* last character  */
+   0x5E74 /* first character */
+  ,0x5E74 /* last character  */
   ,&GUI_Font_micro_25_CharInfo[124] /* address of first character */
   ,&GUI_Font_micro_25_Prop31 /* pointer to next GUI_FONT_PROP_EXT */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP_EXT GUI_Font_micro_25_Prop29 = {
-   0x63D0 /* first character */
-  ,0x63D0 /* last character  */
+   0x5E55 /* first character */
+  ,0x5E55 /* last character  */
   ,&GUI_Font_micro_25_CharInfo[123] /* address of first character */
   ,&GUI_Font_micro_25_Prop30 /* pointer to next GUI_FONT_PROP_EXT */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP_EXT GUI_Font_micro_25_Prop28 = {
-   0x5F88 /* first character */
-  ,0x5F88 /* last character  */
+   0x5DEE /* first character */
+  ,0x5DEE /* last character  */
   ,&GUI_Font_micro_25_CharInfo[122] /* address of first character */
   ,&GUI_Font_micro_25_Prop29 /* pointer to next GUI_FONT_PROP_EXT */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP_EXT GUI_Font_micro_25_Prop27 = {
-   0x5F0F /* first character */
-  ,0x5F0F /* last character  */
+   0x5DE5 /* first character */
+  ,0x5DE5 /* last character  */
   ,&GUI_Font_micro_25_CharInfo[121] /* address of first character */
   ,&GUI_Font_micro_25_Prop28 /* pointer to next GUI_FONT_PROP_EXT */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP_EXT GUI_Font_micro_25_Prop26 = {
-   0x5EA6 /* first character */
-  ,0x5EA6 /* last character  */
+   0x5C4F /* first character */
+  ,0x5C4F /* last character  */
   ,&GUI_Font_micro_25_CharInfo[120] /* address of first character */
   ,&GUI_Font_micro_25_Prop27 /* pointer to next GUI_FONT_PROP_EXT */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP_EXT GUI_Font_micro_25_Prop25 = {
-   0x5E74 /* first character */
-  ,0x5E74 /* last character  */
+   0x5C0F /* first character */
+  ,0x5C0F /* last character  */
   ,&GUI_Font_micro_25_CharInfo[119] /* address of first character */
   ,&GUI_Font_micro_25_Prop26 /* pointer to next GUI_FONT_PROP_EXT */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP_EXT GUI_Font_micro_25_Prop24 = {
-   0x5DEE /* first character */
-  ,0x5DEE /* last character  */
+   0x5B9A /* first character */
+  ,0x5B9A /* last character  */
   ,&GUI_Font_micro_25_CharInfo[118] /* address of first character */
   ,&GUI_Font_micro_25_Prop25 /* pointer to next GUI_FONT_PROP_EXT */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP_EXT GUI_Font_micro_25_Prop23 = {
-   0x5DE5 /* first character */
-  ,0x5DE5 /* last character  */
+   0x597D /* first character */
+  ,0x597D /* last character  */
   ,&GUI_Font_micro_25_CharInfo[117] /* address of first character */
   ,&GUI_Font_micro_25_Prop24 /* pointer to next GUI_FONT_PROP_EXT */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP_EXT GUI_Font_micro_25_Prop22 = {
-   0x5B9A /* first character */
-  ,0x5B9A /* last character  */
+   0x5929 /* first character */
+  ,0x5929 /* last character  */
   ,&GUI_Font_micro_25_CharInfo[116] /* address of first character */
   ,&GUI_Font_micro_25_Prop23 /* pointer to next GUI_FONT_PROP_EXT */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP_EXT GUI_Font_micro_25_Prop21 = {
-   0x597D /* first character */
-  ,0x597D /* last character  */
+   0x56DE /* first character */
+  ,0x56DE /* last character  */
   ,&GUI_Font_micro_25_CharInfo[115] /* address of first character */
   ,&GUI_Font_micro_25_Prop22 /* pointer to next GUI_FONT_PROP_EXT */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP_EXT GUI_Font_micro_25_Prop20 = {
-   0x5929 /* first character */
-  ,0x5929 /* last character  */
+   0x56DB /* first character */
+  ,0x56DB /* last character  */
   ,&GUI_Font_micro_25_CharInfo[114] /* address of first character */
   ,&GUI_Font_micro_25_Prop21 /* pointer to next GUI_FONT_PROP_EXT */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP_EXT GUI_Font_micro_25_Prop19 = {
-   0x56DE /* first character */
-  ,0x56DE /* last character  */
+   0x5468 /* first character */
+  ,0x5468 /* last character  */
   ,&GUI_Font_micro_25_CharInfo[113] /* address of first character */
   ,&GUI_Font_micro_25_Prop20 /* pointer to next GUI_FONT_PROP_EXT */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP_EXT GUI_Font_micro_25_Prop18 = {
-   0x56DB /* first character */
-  ,0x56DB /* last character  */
+   0x53C2 /* first character */
+  ,0x53C2 /* last character  */
   ,&GUI_Font_micro_25_CharInfo[112] /* address of first character */
   ,&GUI_Font_micro_25_Prop19 /* pointer to next GUI_FONT_PROP_EXT */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP_EXT GUI_Font_micro_25_Prop17 = {
-   0x5468 /* first character */
-  ,0x5468 /* last character  */
+   0x5355 /* first character */
+  ,0x5355 /* last character  */
   ,&GUI_Font_micro_25_CharInfo[111] /* address of first character */
   ,&GUI_Font_micro_25_Prop18 /* pointer to next GUI_FONT_PROP_EXT */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP_EXT GUI_Font_micro_25_Prop16 = {
-   0x544A /* first character */
-  ,0x544A /* last character  */
+   0x5316 /* first character */
+  ,0x5316 /* last character  */
   ,&GUI_Font_micro_25_CharInfo[110] /* address of first character */
   ,&GUI_Font_micro_25_Prop17 /* pointer to next GUI_FONT_PROP_EXT */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP_EXT GUI_Font_micro_25_Prop15 = {
-   0x53C2 /* first character */
-  ,0x53C2 /* last character  */
+   0x529F /* first character */
+  ,0x529F /* last character  */
   ,&GUI_Font_micro_25_CharInfo[109] /* address of first character */
   ,&GUI_Font_micro_25_Prop16 /* pointer to next GUI_FONT_PROP_EXT */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP_EXT GUI_Font_micro_25_Prop14 = {
-   0x5355 /* first character */
-  ,0x5355 /* last character  */
+   0x5230 /* first character */
+  ,0x5230 /* last character  */
   ,&GUI_Font_micro_25_CharInfo[108] /* address of first character */
   ,&GUI_Font_micro_25_Prop15 /* pointer to next GUI_FONT_PROP_EXT */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP_EXT GUI_Font_micro_25_Prop13 = {
-   0x5316 /* first character */
-  ,0x5316 /* last character  */
+   0x5206 /* first character */
+  ,0x5206 /* last character  */
   ,&GUI_Font_micro_25_CharInfo[107] /* address of first character */
   ,&GUI_Font_micro_25_Prop14 /* pointer to next GUI_FONT_PROP_EXT */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP_EXT GUI_Font_micro_25_Prop12 = {
-   0x5230 /* first character */
-  ,0x5230 /* last character  */
+   0x516D /* first character */
+  ,0x516D /* last character  */
   ,&GUI_Font_micro_25_CharInfo[106] /* address of first character */
   ,&GUI_Font_micro_25_Prop13 /* pointer to next GUI_FONT_PROP_EXT */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP_EXT GUI_Font_micro_25_Prop11 = {
-   0x5206 /* first character */
-  ,0x5206 /* last character  */
+   0x505C /* first character */
+  ,0x505C /* last character  */
   ,&GUI_Font_micro_25_CharInfo[105] /* address of first character */
   ,&GUI_Font_micro_25_Prop12 /* pointer to next GUI_FONT_PROP_EXT */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP_EXT GUI_Font_micro_25_Prop10 = {
-   0x516D /* first character */
-  ,0x516D /* last character  */
+   0x5047 /* first character */
+  ,0x5047 /* last character  */
   ,&GUI_Font_micro_25_CharInfo[104] /* address of first character */
   ,&GUI_Font_micro_25_Prop11 /* pointer to next GUI_FONT_PROP_EXT */
 };

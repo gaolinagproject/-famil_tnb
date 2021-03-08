@@ -120,7 +120,7 @@ WM_HWIN ui_clock_hWin = NULL;
 static void refresh_page()
 {
     WM_HWIN hItem;
-    char tmp_str[40] = {0};
+    char tmp_str[40] = {0},i = 0;
     
     sprintf(tmp_str,"%d",data_set_lcd.year);
     hItem = WM_GetDialogItem(ui_clock_hWin, ID_EDIT_0);
@@ -153,38 +153,38 @@ static void refresh_page()
     EDIT_SetTextAlign(hItem, GUI_TA_HCENTER | GUI_TA_VCENTER);
 //    
 //
-    sprintf(tmp_str,"%d",data_set_lcd.a_clock_hour[0]);
+    sprintf(tmp_str,"%02d",data_set_lcd.a_clock_hour[0]);
     hItem = WM_GetDialogItem(ui_clock_hWin, ID_EDIT_6);
     EDIT_SetText(hItem, tmp_str);
     EDIT_SetFont(hItem, &GUI_Font_micro_25);
     EDIT_SetTextAlign(hItem, GUI_TA_HCENTER | GUI_TA_VCENTER);
     
-    sprintf(tmp_str,"%d",data_set_lcd.a_clock_min[0]);
+    sprintf(tmp_str,"%02d",data_set_lcd.a_clock_min[0]);
     hItem = WM_GetDialogItem(ui_clock_hWin, ID_EDIT_7);
     EDIT_SetText(hItem, tmp_str);
     EDIT_SetFont(hItem, &GUI_Font_micro_25);
     EDIT_SetTextAlign(hItem, GUI_TA_HCENTER | GUI_TA_VCENTER);    
 
-    sprintf(tmp_str,"%d",data_set_lcd.a_clock_hour[1]);
+    sprintf(tmp_str,"%02d",data_set_lcd.a_clock_hour[1]);
     hItem = WM_GetDialogItem(ui_clock_hWin, ID_EDIT_8);
     EDIT_SetText(hItem, tmp_str);
     EDIT_SetFont(hItem, &GUI_Font_micro_25);
     EDIT_SetTextAlign(hItem, GUI_TA_HCENTER | GUI_TA_VCENTER);
     
-    sprintf(tmp_str,"%d",data_set_lcd.a_clock_min[1]);
+    sprintf(tmp_str,"%02d",data_set_lcd.a_clock_min[1]);
     hItem = WM_GetDialogItem(ui_clock_hWin, ID_EDIT_9);
     EDIT_SetText(hItem, tmp_str);
     EDIT_SetFont(hItem, &GUI_Font_micro_25);
     EDIT_SetTextAlign(hItem, GUI_TA_HCENTER | GUI_TA_VCENTER);   
     
     
-    sprintf(tmp_str,"%d",data_set_lcd.a_clock_hour[2]);
+    sprintf(tmp_str,"%02d",data_set_lcd.a_clock_hour[2]);
     hItem = WM_GetDialogItem(ui_clock_hWin, ID_EDIT_10);
     EDIT_SetText(hItem, tmp_str);
     EDIT_SetFont(hItem, &GUI_Font_micro_25);
     EDIT_SetTextAlign(hItem, GUI_TA_HCENTER | GUI_TA_VCENTER);
     
-    sprintf(tmp_str,"%d",data_set_lcd.a_clock_min[2]);
+    sprintf(tmp_str,"%02d",data_set_lcd.a_clock_min[2]);
     hItem = WM_GetDialogItem(ui_clock_hWin, ID_EDIT_11);
     EDIT_SetText(hItem, tmp_str);
     EDIT_SetFont(hItem, &GUI_Font_micro_25);
@@ -193,9 +193,8 @@ static void refresh_page()
     
     
     hItem= WM_GetDialogItem(ui_clock_hWin, ID_BUTTON_2);
-    switch(data_set_lcd.week)
-    {
-      case 0:
+    switch(data_set_lcd.week){
+      case 0: button_user_clock_set(hItem," null ",NULL,0);
         break;
       case 1: button_user_clock_set(hItem," 一 ",NULL,0);
         break;
@@ -211,16 +210,43 @@ static void refresh_page()
         break;
       case 7: button_user_clock_set(hItem," 日 ",NULL,0);
         break;
+      default:
+        break;
     }
 
-    hItem= WM_GetDialogItem(ui_clock_hWin, ID_BUTTON_3);
-    button_user_clock_set(hItem,"每天",NULL,0);
+    
+    for(i = 0; i < 3; i++){
+      hItem= WM_GetDialogItem(ui_clock_hWin, ID_BUTTON_3+i);
+      switch(data_set_lcd.a_clock_num[i]){
+        case 0: button_user_clock_set(hItem," 停用 ",NULL,0);  
+          break;
+        case 1: button_user_clock_set(hItem," 周一 ",NULL,0);
+          break;
+        case 2: button_user_clock_set(hItem," 周二 ",NULL,0);
+          break;
+        case 3: button_user_clock_set(hItem," 周三 ",NULL,0);
+          break;
+        case 4: button_user_clock_set(hItem," 周四 ",NULL,0);
+          break;
+        case 5: button_user_clock_set(hItem," 周五 ",NULL,0);
+          break;
+        case 6: button_user_clock_set(hItem," 周六 ",NULL,0);
+          break;
+        case 7: button_user_clock_set(hItem," 周日 ",NULL,0);
+          break;
+        case 8: button_user_clock_set(hItem," 单次 ",NULL,0);
+          break;
+        case 9: button_user_clock_set(hItem," 每天 ",NULL,0);
+          break;  
+        case 10: button_user_clock_set(hItem," 工日 ",NULL,0);
+          break;  
+        case 11: button_user_clock_set(hItem," 假日 ",NULL,0);
+          break;  
+        default:
+          break;
+      }    
+    }
 
-    hItem= WM_GetDialogItem(ui_clock_hWin, ID_BUTTON_4);
-    button_user_clock_set(hItem,"周一",NULL,0);
-
-    hItem= WM_GetDialogItem(ui_clock_hWin, ID_BUTTON_5);
-    button_user_clock_set(hItem,"单次",NULL,0);
 
 }
 /*********************************************************************
@@ -279,7 +305,7 @@ static void _cbDialog(WM_MESSAGE * pMsg) {
 
     hItem= WM_GetDialogItem(pMsg->hWin, ID_BUTTON_1);
     button_user_skin_set(hItem,"返回",NULL,0);
-    refresh_page();
+
 
     
 
@@ -299,6 +325,7 @@ static void _cbDialog(WM_MESSAGE * pMsg) {
       case WM_NOTIFICATION_RELEASED:
         // USER START (Optionally insert code for reacting on notification message)
         keypadEditInt(hWin,Id,2020,3000,&data_set_lcd.year);
+        data_set_lcd.time_en = 1;
         // USER END
         break;
       case WM_NOTIFICATION_VALUE_CHANGED:
@@ -318,6 +345,7 @@ static void _cbDialog(WM_MESSAGE * pMsg) {
       case WM_NOTIFICATION_RELEASED:
         // USER START (Optionally insert code for reacting on notification message)
         keypadEditInt(hWin,Id,1,12,&data_set_lcd.month);
+        data_set_lcd.time_en = 1;
         // USER END
         break;
       case WM_NOTIFICATION_VALUE_CHANGED:
@@ -337,6 +365,7 @@ static void _cbDialog(WM_MESSAGE * pMsg) {
       case WM_NOTIFICATION_RELEASED:
         // USER START (Optionally insert code for reacting on notification message)
         keypadEditInt(hWin,Id,1,31,&data_set_lcd.date);
+        data_set_lcd.time_en = 1;
         // USER END
         break;
       case WM_NOTIFICATION_VALUE_CHANGED:
@@ -356,6 +385,7 @@ static void _cbDialog(WM_MESSAGE * pMsg) {
       case WM_NOTIFICATION_RELEASED:
         // USER START (Optionally insert code for reacting on notification message)
         keypadEditInt(hWin,Id,0,24,&data_set_lcd.hour);
+        data_set_lcd.time_en = 1;
         // USER END
         break;
       case WM_NOTIFICATION_VALUE_CHANGED:
@@ -375,6 +405,7 @@ static void _cbDialog(WM_MESSAGE * pMsg) {
       case WM_NOTIFICATION_RELEASED:
         // USER START (Optionally insert code for reacting on notification message)
         keypadEditInt(hWin,Id,0,59,&data_set_lcd.min);
+        data_set_lcd.time_en = 1;
         // USER END
         break;
       case WM_NOTIFICATION_VALUE_CHANGED:
@@ -514,8 +545,9 @@ static void _cbDialog(WM_MESSAGE * pMsg) {
       case WM_NOTIFICATION_RELEASED:
         // USER START (Optionally insert code for reacting on notification message)
         // USER END
-        
-        keypadEditInt(hWin,Id,0,31,&ii);
+        xQueueSend(ParaClockQue,( void * ) &data_set_lcd, 0);
+        uiWarning(hWin,WARN_RED_TEXT,"提示","设置成功!",0);
+        data_set_lcd.time_en = 0;
         break;
       // USER START (Optionally insert additional code for further notification handling)
       // USER END
@@ -552,11 +584,72 @@ static void _cbDialog(WM_MESSAGE * pMsg) {
         if(data_set_lcd.week > 7){
           data_set_lcd.week = 1;
         }
+        data_set_lcd.time_en = 1;
         break;
       // USER START (Optionally insert additional code for further notification handling)
       // USER END
       }
       break;
+      
+    case ID_BUTTON_3: // Notifications sent by 'Button'data_set_lcd
+      switch(NCode) {
+      case WM_NOTIFICATION_CLICKED:
+        // USER START (Optionally insert code for reacting on notification message)
+        // USER END
+        break;
+      case WM_NOTIFICATION_RELEASED:
+        // USER START (Optionally insert code for reacting on notification message)
+        // USER END
+        
+        data_set_lcd.a_clock_num[0]++;
+        if(data_set_lcd.a_clock_num[0] > 11){
+          data_set_lcd.a_clock_num[0] = 0;
+        }
+        break;
+      // USER START (Optionally insert additional code for further notification handling)
+      // USER END
+      }
+      break;
+      
+    case ID_BUTTON_4: // Notifications sent by 'Button'data_set_lcd
+      switch(NCode) {
+      case WM_NOTIFICATION_CLICKED:
+        // USER START (Optionally insert code for reacting on notification message)
+        // USER END
+        break;
+      case WM_NOTIFICATION_RELEASED:
+        // USER START (Optionally insert code for reacting on notification message)
+        // USER END
+        
+        data_set_lcd.a_clock_num[1]++;
+        if(data_set_lcd.a_clock_num[1] > 11){
+          data_set_lcd.a_clock_num[1] = 0;
+        }
+        break;
+      // USER START (Optionally insert additional code for further notification handling)
+      // USER END
+      }
+      break;
+
+    case ID_BUTTON_5: // Notifications sent by 'Button'data_set_lcd
+      switch(NCode) {
+      case WM_NOTIFICATION_CLICKED:
+        // USER START (Optionally insert code for reacting on notification message)
+        // USER END
+        break;
+      case WM_NOTIFICATION_RELEASED:
+        // USER START (Optionally insert code for reacting on notification message)
+        // USER END
+        
+        data_set_lcd.a_clock_num[2]++;
+        if(data_set_lcd.a_clock_num[2] > 11){
+          data_set_lcd.a_clock_num[2] = 0;
+        }
+        break;
+      // USER START (Optionally insert additional code for further notification handling)
+      // USER END
+      }
+      break;      
     // USER START (Optionally insert additional code for further Ids)
     // USER END
     }
@@ -579,6 +672,7 @@ static void _cbDialog(WM_MESSAGE * pMsg) {
 *
 *       ui_clock
 */
+
 WM_HWIN ui_clock(void);
 WM_HWIN ui_clock(void) {
   WM_HWIN hWin;
@@ -588,6 +682,8 @@ WM_HWIN ui_clock(void) {
   WM_CreateTimer(hWin, 0, 1000, 0);
   
   ui_clock_hWin = hWin;
+  data_set_lcd.inquire_ui_hWin = ui_clock_hWin;
+  data_set_lcd.time_en = 0;
   
   return hWin;
 }
