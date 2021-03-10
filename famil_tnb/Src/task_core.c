@@ -71,11 +71,11 @@ void clock_comparison(uint8_t i)
       if(sensor_data_core.sec < 2){
        // mp3_control(2);
         xSemaphoreGive(ClockArmSemaphore);
-        if(ButtonArmSemaphore != NULL) //ÏûºÄĞÅºÅÁ¿
+        if(ButtonArmSemaphore != NULL) //æ¶ˆè€—ä¿¡å·é‡
             xSemaphoreTake(ButtonArmSemaphore,0);
       }
 
-      //ÁåÉù
+      //é“ƒå£°
     }
   }
 }
@@ -106,7 +106,7 @@ void clock_core()
     for(i = 0 ;i < 3 ;i++){
       
       if(un_system_data_core.system_data_core.a_clock_num[i] == 0){ 
-        break;
+//        break;
       }else if(un_system_data_core.system_data_core.a_clock_num[i] == sensor_data_core.week){
         clock_comparison(i);
       }else if(un_system_data_core.system_data_core.a_clock_num[i] == 8){
@@ -128,7 +128,7 @@ void clock_core()
       
       if(err == pdTRUE){
         if(j == 0){
-          uiWarning(data_set_lcd.inquire_ui_hWin,WARN_RED_TEXT,"ÌáÊ¾","Ê±¼äµ½!",0);
+          uiWarning(data_set_lcd.inquire_ui_hWin,WARN_RED_TEXT,"æç¤º","æ—¶é—´åˆ°!",0);
           a = rand();
           
           a = (a%10)/2 + 1;
@@ -144,23 +144,28 @@ void clock_core()
           j = 0;
         }else{
           j = 0;
-          mp3_control(6);
-        }
-        if(ButtonArmSemaphore != NULL){
-          err = xSemaphoreTake(ButtonArmSemaphore,0);
-          if(err == pdTRUE){
-            j = un_system_data_core.system_data_core.arm_time*60 + 1;
-          }
+//          mp3_control(6);
         }
 
+
       }
+      if(ButtonArmSemaphore != NULL){
+        err = xSemaphoreTake(ButtonArmSemaphore,0);
+        if(err == pdTRUE){
+          if(j > 0){
+            j = un_system_data_core.system_data_core.arm_time*60 + 1;
+          }
+          mp3_control(6);
+        }
+      }
+      
     }
-//ÆÁÄ»¿ª¹Ø  
+//å±å¹•å¼€å…³  
     if(on_off == 0){
       
       if((un_system_data_core.system_data_core.start_time[0] < (sensor_data_core.hour + 1)) || (un_system_data_core.system_data_core.start_time[1] > sensor_data_core.hour)){
         HAL_GPIO_WritePin(GPIOB, GPIO_PIN_1, GPIO_PIN_RESET);//reset
-      }else if(un_system_data_core.system_data_core.start_time[0] == sensor_data_core.hour){
+      }else if(un_system_data_core.system_data_core.start_time[1] == sensor_data_core.hour){
         HAL_GPIO_WritePin(GPIOB, GPIO_PIN_1, GPIO_PIN_SET);//set
       }
     }
@@ -168,7 +173,7 @@ void clock_core()
     if(0 == HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_5)){
       
        y++;
-       if(y > 20){ //³¤°´5S
+       if(y > 20){ //é•¿æŒ‰5S
         y = 0;
         on_off = 1;
         mp3_control(6);
@@ -205,13 +210,13 @@ void Task_Core(void *pvParameters)
   sensor_init();
   flash_cope();
   seed =  calendar.w_year + calendar.w_month + calendar.w_date + calendar.hour + calendar.min + calendar.sec;
-  srand (seed); //Ëæ»úº¯ÊıÖÖ×Ó²¥ÖÖ
+  srand (seed); //éšæœºå‡½æ•°ç§å­æ’­ç§
   while(1)
   {
     
 //    mp3_test();
     sensor_run();
     clock_core();
-    vTaskDelay( 1000 / portTICK_PERIOD_MS);
+    vTaskDelay( 500 / portTICK_PERIOD_MS);
   }
 }

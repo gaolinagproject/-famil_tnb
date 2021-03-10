@@ -60,9 +60,9 @@
 static const GUI_WIDGET_CREATE_INFO _aDialogCreate[] = {
   { WINDOW_CreateIndirect, "Window", ID_WINDOW_0, 0, 0, 320, 240, 0, 0x0, 0 },
   { TEXT_CreateIndirect, "", ID_TEXT_0, 5, 25, 150, 40, 0, 0x0, 0 },
-  { EDIT_CreateIndirect, "Edit", ID_EDIT_0, 165, 25, 40, 40, 0, 0x64, 0 },
+  { EDIT_CreateIndirect, "Edit", ID_EDIT_1, 165, 25, 40, 40, 0, 0x64, 0 },
   { TEXT_CreateIndirect, "Text", ID_TEXT_1, 215, 25, 40, 40, 0, 0x0, 0 },
-  { EDIT_CreateIndirect, "Edit", ID_EDIT_1, 265, 25, 40, 40, 0, 0x64, 0 },
+  { EDIT_CreateIndirect, "Edit", ID_EDIT_0, 265, 25, 40, 40, 0, 0x64, 0 },
   
   { TEXT_CreateIndirect, "Text", ID_TEXT_2, 5, 75, 150, 40, 0, 0x0, 0 },
   { EDIT_CreateIndirect, "Edit", ID_EDIT_2, 165, 75, 40, 40, 0, 0x64, 0 },
